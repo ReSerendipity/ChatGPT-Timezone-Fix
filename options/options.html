@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Change Timezone</title>
+  <link rel="stylesheet" href="../src/ui.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <header class="hd">
+    <img class="logo" src="../icons/128.png" alt="">
+    <div>
+      <h1 data-i18n="extName"></h1>
+      <p class="sub" data-i18n="optionsTitle"></p>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2 data-i18n="sectionGeneral"></h2>
+    <div class="field">
+      <label for="language" data-i18n="labelLanguage"></label>
+      <select id="language"></select>
+      <p class="hint" data-i18n="langAuto"></p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 data-i18n="sectionBehavior"></h2>
+    <div class="field">
+      <label for="mode" data-i18n="labelDefaultMode"></label>
+      <select id="mode">
+        <option value="auto" data-i18n="modeAuto"></option>
+        <option value="cdp" data-i18n="modeCdp"></option>
+        <option value="script" data-i18n="modeScript"></option>
+      </select>
+      <p class="hint" id="modeHint"></p>
+    </div>
+    <div class="field">
+      <label for="defaultTz" data-i18n="labelDefaultTimezone"></label>
+      <select id="defaultTz"></select>
+    </div>
+    <div class="field">
+      <label for="reloadOnApply" data-i18n="labelReloadOnApply"></label>
+      <input type="checkbox" id="reloadOnApply">
+    </div>
+    <div class="field">
+      <label for="badge" data-i18n="labelBadge"></label>
+      <input type="checkbox" id="badge">
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 data-i18n="sectionVerify"></h2>
+    <p class="desc" data-i18n="verifyDesc"></p>
+    <button class="primary" id="btnVerify" data-i18n="btnVerifyNow"></button>
+    <div id="verifyResult" class="verify hidden"></div>
+  </section>
+
+  <section class="card">
+    <h2 data-i18n="sectionAbout"></h2>
+    <p class="desc" data-i18n="aboutText"></p>
+    <p style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0">
+      <span><span data-i18n="labelVersion"></span>: <b id="version"></b></span>
+      <a id="srcLink" href="https://github.com/" target="_blank" rel="noopener nofollow" data-i18n="linkSource"></a>
+    </p>
+  </section>
+
+  <div class="savebar">
+    <button class="primary" id="btnSave" data-i18n="btnSave"></button>
+    <span class="saved hidden" id="savedTip" data-i18n="savedTip"></span>
+  </div>
+
+  <script src="../src/common.js"></script>
+  <script src="../src/i18n.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

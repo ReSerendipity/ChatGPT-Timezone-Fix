@@ -1,0 +1,41 @@
+/* Change Timezone — options styles */
+body { max-width: 780px; margin: 0 auto; padding: 28px 20px 96px; }
+
+.hd { display: flex; gap: 14px; align-items: center; margin-bottom: 20px; }
+.hd .logo { width: 48px; height: 48px; }
+.hd h1 { font-size: 20px; margin: 0; }
+.hd .sub { margin: 2px 0 0; color: var(--muted); font-size: 12px; }
+
+.card {
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 12px; padding: 18px 20px; margin-bottom: 16px;
+}
+.card h2 { font-size: 14px; margin: 0 0 14px; }
+.desc { margin: 0 0 12px; color: var(--muted); font-size: 12px; }
+
+.field { display: grid; grid-template-columns: 220px 1fr; gap: 4px 14px; align-items: center; margin-bottom: 12px; }
+.field > label { font-size: 13px; font-weight: 600; }
+.field select, .field input[type="checkbox"] { justify-self: start; }
+.field input[type="checkbox"] { width: 16px; height: 16px; }
+.field .hint { grid-column: 2; margin: 2px 0 0; font-size: 11px; color: var(--muted); }
+
+button.primary {
+  background: var(--primary); border-color: var(--primary); color: var(--primary-fg);
+  padding: 8px 18px; font-weight: 600;
+}
+
+.verify { margin-top: 12px; border-radius: var(--radius); padding: 10px 12px; font-size: 12px; border: 1px solid var(--border); }
+.verify.ok { background: var(--ok-bg); color: var(--ok-fg); border-color: transparent; }
+.verify.err { background: var(--err-bg); color: var(--err-fg); border-color: transparent; }
+.verify .head { font-weight: 700; }
+.verify table { border-collapse: collapse; margin-top: 8px; width: 100%; font-size: 12px; }
+.verify td { padding: 3px 8px 3px 0; vertical-align: top; }
+.verify td:first-child { color: inherit; opacity: .75; white-space: nowrap; }
+.verify td:last-child { font-variant-numeric: tabular-nums; text-align: right; }
+
+.savebar {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  display: flex; gap: 12px; align-items: center; justify-content: center;
+  padding: 12px; background: var(--bg); border-top: 1px solid var(--border);
+}
+.saved { color: var(--ok-fg); font-size: 12px; font-weight: 600; }

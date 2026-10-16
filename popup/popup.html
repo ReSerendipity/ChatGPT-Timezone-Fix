@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Change Timezone</title>
+  <link rel="stylesheet" href="../src/ui.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="hd">
+    <img class="logo" src="../icons/128.png" alt="">
+    <div class="hd-t">
+      <h1 data-i18n="extName"></h1>
+      <p class="status" id="tabStatus"></p>
+    </div>
+    <button class="gear" id="btnOptions" data-i18n-title="btnOptions" aria-label="options">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="3"></circle>
+        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+      </svg>
+    </button>
+  </header>
+
+  <div class="notice hidden" id="pageNotice"></div>
+
+  <section class="field">
+    <label for="mode" data-i18n="labelMode"></label>
+    <select id="mode">
+      <option value="auto" data-i18n="modeAuto"></option>
+      <option value="cdp" data-i18n="modeCdp"></option>
+      <option value="script" data-i18n="modeScript"></option>
+    </select>
+    <p class="hint" id="modeHint"></p>
+  </section>
+
+  <section class="field">
+    <div class="row-between">
+      <label for="search" data-i18n="labelTimezone"></label>
+      <span>
+        <button class="link" id="favToggle" data-i18n-title="favAdd" aria-label="favorite">&#9734;</button>
+        <button class="link" id="btnRandom" data-i18n="btnRandom"></button>
+      </span>
+    </div>
+    <input id="search" type="search" autocomplete="off" data-i18n-placeholder="searchPlaceholder">
+    <div class="list" id="list" role="listbox" aria-label="timezone"></div>
+  </section>
+
+  <div class="preview">
+    <span class="k" data-i18n="labelPreview"></span>
+    <span class="v" id="previewTime"></span>
+  </div>
+
+  <div class="chips" id="favChips"></div>
+
+  <div class="btns">
+    <button class="primary" id="btnApply" data-i18n="btnApply"></button>
+    <button id="btnReset" data-i18n="btnReset"></button>
+    <button id="btnVerify" data-i18n="btnVerify"></button>
+  </div>
+
+  <div class="verify hidden" id="verifyBox"></div>
+
+  <p class="foot"><span data-i18n="footerNote"></span> &middot; <span id="ver"></span></p>
+
+  <script src="../src/common.js"></script>
+  <script src="../src/i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
