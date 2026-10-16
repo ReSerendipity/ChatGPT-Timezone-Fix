@@ -17,9 +17,13 @@
 - **Floating verification badge** — optional on-page card showing expected vs. observed time zone with an in-effect / not-in-effect chip.
 - **14 languages**: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Português (Brasil), Français, Deutsch, Русский, Italiano, Türkçe, Bahasa Indonesia, Tiếng Việt.
 
+## Screenshots
+
+_Coming soon — popup, verification panel and the floating on-page badge._
+
 ## Install (load unpacked)
 
-1. Clone or download this repository. The folder name must stay `change-timezone`.
+1. Clone or download this repository. Any folder name works when loading — `change-timezone` is just the name that matches the repository.
 2. Open `chrome://extensions` (Edge: `edge://extensions`).
 3. Enable **Developer mode** (top right).
 4. Click **Load unpacked** and select the `change-timezone` folder.
@@ -42,6 +46,18 @@
 **About the CDP ("browser timezone") mode:** it really changes the tab's time zone at browser level — every page sees the new zone. While the debugger is attached, Chrome displays an "… is debugging this browser" banner on the tab; closing the banner detaches the debugger and the extension marks the tab as *detached* (the popup then suggests re-applying).
 
 **Limits of the "page script" mode:** `Date` / `Intl` are rewritten inside the page. If the page finished loading before the config was pushed, a reload may be needed (the "Reload the tab after applying" option in Settings is on by default). Parsing date/time strings **without** an explicit time zone still uses the real system zone — an OS-level catch that no in-page script can fully replace. For a truly complete effect, use the CDP mode.
+
+## FAQ
+
+**"Load unpacked" shows an error** — make sure you selected the *inner* folder that directly contains `manifest.json` (e.g. `change-timezone-main/`), not the ZIP file and not the folder that contains it.
+
+**Chrome shows a "… is debugging this browser" banner on the tab** — that's expected in the browser-level (CDP) method; it's how the real per-tab override stays active. Closing the banner detaches it — press Apply again to restore. Prefer no banner? Switch to the page-script method.
+
+**Can I change the Ctrl+Shift+Z shortcut?** — yes: open `chrome://extensions/shortcuts` (Edge: `edge://extensions/shortcuts`) and edit "Apply a random timezone to the current tab".
+
+**Why does the extension ask for broad permissions?** — `debugger` implements the browser-level timezone override; `scripting` / `tabs` / host access push the config into the page and read back what the page actually sees. Nothing leaves your machine — there is no analytics, tracking or network call in the code.
+
+**The page still shows the old time** — in page-script mode, a page that finished loading before the config was pushed may need a reload (the "Reload the tab after applying" option is on by default). For a completely native effect, use the browser-level (CDP) method.
 
 ## Development
 
@@ -141,9 +157,13 @@ change-timezone/
 - **悬浮验证徽标**：可选开关，在页面上显示"期望 / 实际"对照卡片与生效状态。
 - **14 种语言**：English、简体中文、繁體中文、日本語、한국어、Español、Português (Brasil)、Français、Deutsch、Русский、Italiano、Türkçe、Bahasa Indonesia、Tiếng Việt。
 
+## 界面截图
+
+_待补充：popup、验证面板与页面悬浮徽标。_
+
 ## 安装（加载已解压）
 
-1. 克隆或下载本仓库，目录名保持 `change-timezone`。
+1. 克隆或下载本仓库。解压后的目录名可任意（加载不强制改名；与仓库名一致只是便于对照）。
 2. 打开 `chrome://extensions`（Edge 用 `edge://extensions`）。
 3. 打开右上角**开发者模式**。
 4. 点击**加载已解压的扩展程序**，选择 `change-timezone` 目录。
@@ -166,6 +186,18 @@ change-timezone/
 **关于 cdp（浏览器时区）模式**：它从浏览器层真正改变标签页时区，页面感知彻底。调试器附加期间 Chrome 会在标签页显示"正在调试"横幅；手动关掉横幅会分离调试器，此时扩展会把该标签页标记为 *detached*（popup 会提示重新应用以恢复覆盖）。
 
 **页面脚本模式的限制**：仅重写页面内 `Date` / `Intl`。若页面在配置写入前已加载完成，可能需要刷新（"应用后重新加载标签页"选项默认开启）。**不带显式时区**的时间字符串解析仍走真实系统时区——这是页面脚本无法完全覆盖的底层行为。要完整效果请使用 cdp 模式。
+
+## 常见问题
+
+**点「加载已解压」报错** —— 请确认选中的是**直接包含 `manifest.json` 的内层目录**（如 `change-timezone-main/`），而不是 zip 文件本身，也不是它的上级目录。
+
+**标签页出现「正在调试此浏览器」横幅** —— 这是浏览器级（CDP）方式的正常现象，真正的时区覆盖靠它保持；关掉横幅会解除覆盖，重新点「应用」即可恢复。不想看到横幅，可切换到页面脚本方式。
+
+**能改 Ctrl+Shift+Z 快捷键吗？** —— 可以：打开 `chrome://extensions/shortcuts`（Edge：`edge://extensions/shortcuts`），修改「为当前标签页应用随机时区」。
+
+**为什么权限看起来很多？** —— `debugger` 用于实现浏览器级时区覆盖；`scripting` / `tabs` / 主机访问用于把配置写入页面并读回页面实际看到的时区。代码不含任何统计、追踪或网络请求，数据不出本机。
+
+**页面显示的时间没变** —— 页面脚本模式下，配置写入前已加载完成的页面可能需要刷新（默认已开启「应用后重新加载标签页」）。要完全原生的效果，请使用浏览器级（CDP）方式。
 
 ## 开发与工具
 
