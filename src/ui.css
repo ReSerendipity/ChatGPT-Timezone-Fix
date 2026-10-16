@@ -13,6 +13,8 @@
   --warn-fg: #92400e;
   --err-bg: #fee2e2;
   --err-fg: #991b1b;
+  --tip-bg: #dbeafe;
+  --tip-fg: #1e40af;
   --radius: 8px;
 }
 
@@ -31,6 +33,8 @@
     --warn-fg: #fde68a;
     --err-bg: #7f1d1d;
     --err-fg: #fecaca;
+    --tip-bg: #1e3a8a;
+    --tip-fg: #bfdbfe;
   }
 }
 

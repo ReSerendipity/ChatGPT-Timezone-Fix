@@ -301,5 +301,17 @@
   "favRemove": {
     "message": "Entfernen",
     "description": "Remove from favorites"
+  },
+  "introTip": {
+    "message": "Wähle eine Zeitzone und klicke auf Anwenden — die Wirkung wird automatisch geprüft.",
+    "description": "First-open tip shown at the top of the popup"
+  },
+  "cdpBannerNote": {
+    "message": "Chrome zeigt auf diesem Tab einen „Debugging“-Hinweis. Das ist normal — so bleibt die Änderung auf Browser-Ebene aktiv.",
+    "description": "Note explaining that Chrome's debugging banner is normal"
+  },
+  "btnRandomHint": {
+    "message": "Zufällige Zeitzone (Tastenkürzel Ctrl+Shift+Z)",
+    "description": "Tooltip on the random button mentioning the keyboard shortcut"
   }
 }

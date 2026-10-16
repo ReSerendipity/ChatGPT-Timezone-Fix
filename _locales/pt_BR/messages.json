@@ -301,5 +301,17 @@
   "favRemove": {
     "message": "Remover",
     "description": "Remove from favorites"
+  },
+  "introTip": {
+    "message": "Escolha um fuso horário e clique em Aplicar — o efeito é verificado automaticamente.",
+    "description": "First-open tip shown at the top of the popup"
+  },
+  "cdpBannerNote": {
+    "message": "O Chrome mostra um aviso de \"depuração\" nesta aba. É normal: é assim que a alteração no nível do navegador se mantém ativa.",
+    "description": "Note explaining that Chrome's debugging banner is normal"
+  },
+  "btnRandomHint": {
+    "message": "Fuso horário aleatório (atalho Ctrl+Shift+Z)",
+    "description": "Tooltip on the random button mentioning the keyboard shortcut"
   }
 }

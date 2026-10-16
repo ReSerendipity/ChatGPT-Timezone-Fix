@@ -301,5 +301,17 @@
   "favRemove": {
     "message": "取消收藏",
     "description": "Remove from favorites"
+  },
+  "introTip": {
+    "message": "选好时区后点「应用」，扩展会自动验证是否生效。",
+    "description": "First-open tip shown at the top of the popup"
+  },
+  "cdpBannerNote": {
+    "message": "Chrome 会在标签页显示「正在调试」横幅——这是浏览器级时区覆盖的正常现象；关闭横幅会使覆盖失效。",
+    "description": "Note explaining that Chrome's debugging banner is normal"
+  },
+  "btnRandomHint": {
+    "message": "随机时区（快捷键 Ctrl+Shift+Z）",
+    "description": "Tooltip on the random button mentioning the keyboard shortcut"
   }
 }

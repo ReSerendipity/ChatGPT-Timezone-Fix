@@ -301,5 +301,17 @@
   "favRemove": {
     "message": "Remove",
     "description": "Remove from favorites"
+  },
+  "introTip": {
+    "message": "Pick a time zone and click Apply — the effect is verified automatically.",
+    "description": "First-open tip shown at the top of the popup"
+  },
+  "cdpBannerNote": {
+    "message": "Chrome shows a \"debugging\" banner on this tab. That's normal — it's how the browser-level override stays active.",
+    "description": "Note explaining that Chrome's debugging banner is normal"
+  },
+  "btnRandomHint": {
+    "message": "Random time zone (shortcut Ctrl+Shift+Z)",
+    "description": "Tooltip on the random button mentioning the keyboard shortcut"
   }
 }

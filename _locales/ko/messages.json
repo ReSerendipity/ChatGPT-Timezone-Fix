@@ -301,5 +301,17 @@
   "favRemove": {
     "message": "제거",
     "description": "Remove from favorites"
+  },
+  "introTip": {
+    "message": "시간대를 선택하고 '적용'을 누르면 변경 효과를 자동으로 검증합니다.",
+    "description": "First-open tip shown at the top of the popup"
+  },
+  "cdpBannerNote": {
+    "message": "Chrome은 이 탭에 \"디버깅 중\" 배너를 표시합니다. 브라우저 수준 변경을 유지하기 위한 정상적인 동작입니다.",
+    "description": "Note explaining that Chrome's debugging banner is normal"
+  },
+  "btnRandomHint": {
+    "message": "무작위 시간대(단축키 Ctrl+Shift+Z)",
+    "description": "Tooltip on the random button mentioning the keyboard shortcut"
   }
 }

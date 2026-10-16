@@ -301,5 +301,17 @@
   "favRemove": {
     "message": "Retirer",
     "description": "Remove from favorites"
+  },
+  "introTip": {
+    "message": "Choisis un fuseau et clique sur Appliquer — l'effet est vérifié automatiquement.",
+    "description": "First-open tip shown at the top of the popup"
+  },
+  "cdpBannerNote": {
+    "message": "Chrome affiche une bannière « débogage » sur cet onglet. C'est normal : c'est ainsi que le changement au niveau du navigateur reste actif.",
+    "description": "Note explaining that Chrome's debugging banner is normal"
+  },
+  "btnRandomHint": {
+    "message": "Fuseau aléatoire (raccourci Ctrl+Shift+Z)",
+    "description": "Tooltip on the random button mentioning the keyboard shortcut"
   }
 }

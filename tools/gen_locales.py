@@ -81,6 +81,9 @@ DESC = {
     "labelFavorites": "Favorites label",
     "favAdd": "Add to favorites",
     "favRemove": "Remove from favorites",
+    "introTip": "First-open tip shown at the top of the popup",
+    "cdpBannerNote": "Note explaining that Chrome's debugging banner is normal",
+    "btnRandomHint": "Tooltip on the random button mentioning the keyboard shortcut",
 }
 
 EN = {
@@ -159,6 +162,9 @@ EN = {
     "labelFavorites": "Favorites",
     "favAdd": "Add",
     "favRemove": "Remove",
+    "introTip": "Pick a time zone and click Apply — the effect is verified automatically.",
+    "cdpBannerNote": "Chrome shows a \"debugging\" banner on this tab. That's normal — it's how the browser-level override stays active.",
+    "btnRandomHint": "Random time zone (shortcut Ctrl+Shift+Z)",
 }
 
 T = {
@@ -238,6 +244,9 @@ T = {
     "labelFavorites": "收藏",
     "favAdd": "收藏",
     "favRemove": "取消收藏",
+    "introTip": "选好时区后点「应用」，扩展会自动验证是否生效。",
+    "cdpBannerNote": "Chrome 会在标签页显示「正在调试」横幅——这是浏览器级时区覆盖的正常现象；关闭横幅会使覆盖失效。",
+    "btnRandomHint": "随机时区（快捷键 Ctrl+Shift+Z）",
 },
 "zh_TW": {
     "extName": "修改時區",
@@ -315,6 +324,9 @@ T = {
     "labelFavorites": "收藏",
     "favAdd": "收藏",
     "favRemove": "取消收藏",
+    "introTip": "選好時區後按「套用」，擴充功能會自動驗證是否生效。",
+    "cdpBannerNote": "Chrome 會在標籤頁顯示「正在偵錯」橫幅——這是瀏覽器層級時區覆寫的正常現象；關閉橫幅會使覆寫失效。",
+    "btnRandomHint": "隨機時區（快速鍵 Ctrl+Shift+Z）",
 },
 "ja": {
     "extName": "タイムゾーンを変更",
@@ -392,6 +404,9 @@ T = {
     "labelFavorites": "お気に入り",
     "favAdd": "追加",
     "favRemove": "削除",
+    "introTip": "タイムゾーンを選んで「適用」を押すと、効果を自動的に検証します。",
+    "cdpBannerNote": "Chrome はこのタブに「デバッグ中」バナーを表示します。これは正常な動作で、ブラウザレベルの変更を有効に保つためのものです。",
+    "btnRandomHint": "ランダムなタイムゾーン（ショートカット Ctrl+Shift+Z）",
 },
 "ko": {
     "extName": "시간대 변경",
@@ -469,6 +484,9 @@ T = {
     "labelFavorites": "즐겨찾기",
     "favAdd": "추가",
     "favRemove": "제거",
+    "introTip": "시간대를 선택하고 '적용'을 누르면 변경 효과를 자동으로 검증합니다.",
+    "cdpBannerNote": "Chrome은 이 탭에 \"디버깅 중\" 배너를 표시합니다. 브라우저 수준 변경을 유지하기 위한 정상적인 동작입니다.",
+    "btnRandomHint": "무작위 시간대(단축키 Ctrl+Shift+Z)",
 },
 "es": {
     "extName": "Cambiar zona horaria",
@@ -546,6 +564,9 @@ T = {
     "labelFavorites": "Favoritos",
     "favAdd": "Añadir",
     "favRemove": "Quitar",
+    "introTip": "Elige una zona horaria y pulsa Aplicar: el efecto se verifica automáticamente.",
+    "cdpBannerNote": "Chrome muestra un aviso de «depurando» en esta pestaña. Es normal: así se mantiene activo el cambio a nivel de navegador.",
+    "btnRandomHint": "Zona horaria aleatoria (atajo Ctrl+Shift+Z)",
 },
 "pt_BR": {
     "extName": "Alterar fuso horário",
@@ -623,6 +644,9 @@ T = {
     "labelFavorites": "Favoritos",
     "favAdd": "Adicionar",
     "favRemove": "Remover",
+    "introTip": "Escolha um fuso horário e clique em Aplicar — o efeito é verificado automaticamente.",
+    "cdpBannerNote": "O Chrome mostra um aviso de \"depuração\" nesta aba. É normal: é assim que a alteração no nível do navegador se mantém ativa.",
+    "btnRandomHint": "Fuso horário aleatório (atalho Ctrl+Shift+Z)",
 },
 "fr": {
     "extName": "Changer de fuseau horaire",
@@ -700,6 +724,9 @@ T = {
     "labelFavorites": "Favoris",
     "favAdd": "Ajouter",
     "favRemove": "Retirer",
+    "introTip": "Choisis un fuseau et clique sur Appliquer — l'effet est vérifié automatiquement.",
+    "cdpBannerNote": "Chrome affiche une bannière « débogage » sur cet onglet. C'est normal : c'est ainsi que le changement au niveau du navigateur reste actif.",
+    "btnRandomHint": "Fuseau aléatoire (raccourci Ctrl+Shift+Z)",
 },
 "de": {
     "extName": "Zeitzone ändern",
@@ -777,6 +804,9 @@ T = {
     "labelFavorites": "Favoriten",
     "favAdd": "Hinzufügen",
     "favRemove": "Entfernen",
+    "introTip": "Wähle eine Zeitzone und klicke auf Anwenden — die Wirkung wird automatisch geprüft.",
+    "cdpBannerNote": "Chrome zeigt auf diesem Tab einen „Debugging“-Hinweis. Das ist normal — so bleibt die Änderung auf Browser-Ebene aktiv.",
+    "btnRandomHint": "Zufällige Zeitzone (Tastenkürzel Ctrl+Shift+Z)",
 },
 "ru": {
     "extName": "Смена часового пояса",
@@ -854,6 +884,9 @@ T = {
     "labelFavorites": "Избранное",
     "favAdd": "Добавить",
     "favRemove": "Убрать",
+    "introTip": "Выберите часовой пояс и нажмите «Применить» — результат будет проверен автоматически.",
+    "cdpBannerNote": "Chrome показывает на этой вкладке баннер «Отладка». Это нормально — так сохраняется изменение на уровне браузера.",
+    "btnRandomHint": "Случайный часовой пояс (горячая клавиша Ctrl+Shift+Z)",
 },
 "it": {
     "extName": "Cambia fuso orario",
@@ -931,6 +964,9 @@ T = {
     "labelFavorites": "Preferiti",
     "favAdd": "Aggiungi",
     "favRemove": "Rimuovi",
+    "introTip": "Scegli un fuso orario e clicca Applica — l'effetto viene verificato automaticamente.",
+    "cdpBannerNote": "Chrome mostra un avviso di «debug» su questa scheda. È normale: è così che la modifica a livello di browser rimane attiva.",
+    "btnRandomHint": "Fuso casuale (scorciatoia Ctrl+Shift+Z)",
 },
 "tr": {
     "extName": "Saat dilimini değiştir",
@@ -1008,6 +1044,9 @@ T = {
     "labelFavorites": "Favoriler",
     "favAdd": "Ekle",
     "favRemove": "Kaldır",
+    "introTip": "Bir saat dilimi seçip Uygula'ya bas — etkisi otomatik olarak doğrulanır.",
+    "cdpBannerNote": "Chrome bu sekmede bir \"hata ayıklama\" bandı gösterir. Bu normaldir — tarayıcı düzeyindeki değişiklik bu şekilde etkin kalır.",
+    "btnRandomHint": "Rastgele saat dilimi (kısayol Ctrl+Shift+Z)",
 },
 "id": {
     "extName": "Ubah Zona Waktu",
@@ -1085,6 +1124,9 @@ T = {
     "labelFavorites": "Favorit",
     "favAdd": "Tambah",
     "favRemove": "Hapus",
+    "introTip": "Pilih zona waktu lalu klik Terapkan — efeknya diverifikasi otomatis.",
+    "cdpBannerNote": "Chrome menampilkan banner \"debugging\" di tab ini. Itu normal — beginilah perubahan tingkat browser tetap aktif.",
+    "btnRandomHint": "Zona waktu acak (pintasan Ctrl+Shift+Z)",
 },
 "vi": {
     "extName": "Thay đổi múi giờ",
@@ -1162,6 +1204,9 @@ T = {
     "labelFavorites": "Yêu thích",
     "favAdd": "Thêm",
     "favRemove": "Bỏ",
+    "introTip": "Chọn múi giờ và nhấn Áp dụng — hiệu lực sẽ được xác minh tự động.",
+    "cdpBannerNote": "Chrome hiển thị biểu ngữ \"đang gỡ lỗi\" trên tab này. Đó là bình thường — nhờ đó thay đổi cấp trình duyệt vẫn có hiệu lực.",
+    "btnRandomHint": "Múi giờ ngẫu nhiên (phím tắt Ctrl+Shift+Z)",
 },
 }
 

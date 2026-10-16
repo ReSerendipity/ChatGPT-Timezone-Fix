@@ -301,5 +301,17 @@
   "favRemove": {
     "message": "Убрать",
     "description": "Remove from favorites"
+  },
+  "introTip": {
+    "message": "Выберите часовой пояс и нажмите «Применить» — результат будет проверен автоматически.",
+    "description": "First-open tip shown at the top of the popup"
+  },
+  "cdpBannerNote": {
+    "message": "Chrome показывает на этой вкладке баннер «Отладка». Это нормально — так сохраняется изменение на уровне браузера.",
+    "description": "Note explaining that Chrome's debugging banner is normal"
+  },
+  "btnRandomHint": {
+    "message": "Случайный часовой пояс (горячая клавиша Ctrl+Shift+Z)",
+    "description": "Tooltip on the random button mentioning the keyboard shortcut"
   }
 }

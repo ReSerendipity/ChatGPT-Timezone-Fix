@@ -301,5 +301,17 @@
   "favRemove": {
     "message": "削除",
     "description": "Remove from favorites"
+  },
+  "introTip": {
+    "message": "タイムゾーンを選んで「適用」を押すと、効果を自動的に検証します。",
+    "description": "First-open tip shown at the top of the popup"
+  },
+  "cdpBannerNote": {
+    "message": "Chrome はこのタブに「デバッグ中」バナーを表示します。これは正常な動作で、ブラウザレベルの変更を有効に保つためのものです。",
+    "description": "Note explaining that Chrome's debugging banner is normal"
+  },
+  "btnRandomHint": {
+    "message": "ランダムなタイムゾーン（ショートカット Ctrl+Shift+Z）",
+    "description": "Tooltip on the random button mentioning the keyboard shortcut"
   }
 }

@@ -301,5 +301,17 @@
   "favRemove": {
     "message": "Bỏ",
     "description": "Remove from favorites"
+  },
+  "introTip": {
+    "message": "Chọn múi giờ và nhấn Áp dụng — hiệu lực sẽ được xác minh tự động.",
+    "description": "First-open tip shown at the top of the popup"
+  },
+  "cdpBannerNote": {
+    "message": "Chrome hiển thị biểu ngữ \"đang gỡ lỗi\" trên tab này. Đó là bình thường — nhờ đó thay đổi cấp trình duyệt vẫn có hiệu lực.",
+    "description": "Note explaining that Chrome's debugging banner is normal"
+  },
+  "btnRandomHint": {
+    "message": "Múi giờ ngẫu nhiên (phím tắt Ctrl+Shift+Z)",
+    "description": "Tooltip on the random button mentioning the keyboard shortcut"
   }
 }

@@ -301,5 +301,17 @@
   "favRemove": {
     "message": "Quitar",
     "description": "Remove from favorites"
+  },
+  "introTip": {
+    "message": "Elige una zona horaria y pulsa Aplicar: el efecto se verifica automáticamente.",
+    "description": "First-open tip shown at the top of the popup"
+  },
+  "cdpBannerNote": {
+    "message": "Chrome muestra un aviso de «depurando» en esta pestaña. Es normal: así se mantiene activo el cambio a nivel de navegador.",
+    "description": "Note explaining that Chrome's debugging banner is normal"
+  },
+  "btnRandomHint": {
+    "message": "Zona horaria aleatoria (atajo Ctrl+Shift+Z)",
+    "description": "Tooltip on the random button mentioning the keyboard shortcut"
   }
 }

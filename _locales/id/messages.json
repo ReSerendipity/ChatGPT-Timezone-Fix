@@ -301,5 +301,17 @@
   "favRemove": {
     "message": "Hapus",
     "description": "Remove from favorites"
+  },
+  "introTip": {
+    "message": "Pilih zona waktu lalu klik Terapkan — efeknya diverifikasi otomatis.",
+    "description": "First-open tip shown at the top of the popup"
+  },
+  "cdpBannerNote": {
+    "message": "Chrome menampilkan banner \"debugging\" di tab ini. Itu normal — beginilah perubahan tingkat browser tetap aktif.",
+    "description": "Note explaining that Chrome's debugging banner is normal"
+  },
+  "btnRandomHint": {
+    "message": "Zona waktu acak (pintasan Ctrl+Shift+Z)",
+    "description": "Tooltip on the random button mentioning the keyboard shortcut"
   }
 }

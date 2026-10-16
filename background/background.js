@@ -236,7 +236,7 @@ function verifyTab(tabId) {
     return observeTab(tabId).then(function (observed) {
       var pass = !!observed && observed.tz === expectedTz;
       var detached = !!(st.tabs[tabId] && st.tabs[tabId].status === 'detached');
-      return { ok: true, expected: expectedTz, observed: observed, pass: pass, detached: detached };
+      return { ok: true, expected: expectedTz, observed: observed, pass: pass, detached: detached, mode: (st.tabs[tabId] && st.tabs[tabId].mode) || null };
     });
   });
 }

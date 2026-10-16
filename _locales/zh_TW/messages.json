@@ -301,5 +301,17 @@
   "favRemove": {
     "message": "取消收藏",
     "description": "Remove from favorites"
+  },
+  "introTip": {
+    "message": "選好時區後按「套用」，擴充功能會自動驗證是否生效。",
+    "description": "First-open tip shown at the top of the popup"
+  },
+  "cdpBannerNote": {
+    "message": "Chrome 會在標籤頁顯示「正在偵錯」橫幅——這是瀏覽器層級時區覆寫的正常現象；關閉橫幅會使覆寫失效。",
+    "description": "Note explaining that Chrome's debugging banner is normal"
+  },
+  "btnRandomHint": {
+    "message": "隨機時區（快速鍵 Ctrl+Shift+Z）",
+    "description": "Tooltip on the random button mentioning the keyboard shortcut"
   }
 }

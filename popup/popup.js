@@ -21,6 +21,7 @@
     verifyBox: document.getElementById('verifyBox'),
     ver: document.getElementById('ver'),
     notice: document.getElementById('pageNotice'),
+    introTip: document.getElementById('introTip'),
   };
 
   var REGION_ORDER = ['Africa', 'America', 'Antarctica', 'Asia', 'Atlantic', 'Australia', 'Europe', 'Indian', 'Pacific', 'Etc'];
@@ -52,6 +53,14 @@
   function showNotice(msg) {
     els.notice.textContent = msg;
     els.notice.classList.remove('hidden');
+  }
+
+  function showIntroTip() {
+    CTZ.storage.get('introSeen').then(function (d) {
+      if (d.introSeen) return;
+      els.introTip.textContent = t('introTip');
+      els.introTip.classList.remove('hidden');
+    }).catch(function () { /* storage unavailable — skip tip */ });
   }
 
   function setBusy(busy) {
@@ -149,8 +158,11 @@
     previewTimer = setInterval(renderPreview, 1000);
   }
 
-  function showVerifyBox(kind, headline, res) {
+  function showVerifyBox(kind, headline, res, note) {
     var html = '<div class="head">' + escapeHtml(headline) + '</div>';
+    if (note) {
+      html += '<div class="note">' + escapeHtml(note) + '</div>';
+    }
     if (res && res.observed) {
       html += '<div class="rows">' +
         '<div class="r"><span>' + escapeHtml(t('labelObserved')) + '</span><span>' +
@@ -222,7 +234,7 @@
         } else if (!res.observed) {
           showVerifyBox('err', t('verifyNeedPage'), null);
         } else if (res.pass) {
-          showVerifyBox('ok', t('verifyPass'), res);
+          showVerifyBox('ok', t('verifyPass'), res, res.mode === 'cdp' ? t('cdpBannerNote') : null);
         } else {
           showVerifyBox('err', res.detached ? t('verifyDetached') : t('verifyFail'), res);
         }
@@ -320,6 +332,10 @@
     if (chrome.runtime.openOptionsPage) chrome.runtime.openOptionsPage();
     else window.open(chrome.runtime.getURL('options/options.html'));
   });
+  els.introTip.addEventListener('click', function () {
+    els.introTip.classList.add('hidden');
+    CTZ.storage.set({ introSeen: true });
+  });
 
   /* ---------------- init ---------------- */
 
@@ -339,6 +355,7 @@
       CTZ.i18n.apply(document);
       document.title = t('extName');
       els.ver.textContent = 'v' + chrome.runtime.getManifest().version;
+      showIntroTip();
       return CTZ.loadTimezones();
     })
     .then(function (data) {

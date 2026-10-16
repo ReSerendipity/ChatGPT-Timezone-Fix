@@ -301,5 +301,17 @@
   "favRemove": {
     "message": "Kaldır",
     "description": "Remove from favorites"
+  },
+  "introTip": {
+    "message": "Bir saat dilimi seçip Uygula'ya bas — etkisi otomatik olarak doğrulanır.",
+    "description": "First-open tip shown at the top of the popup"
+  },
+  "cdpBannerNote": {
+    "message": "Chrome bu sekmede bir \"hata ayıklama\" bandı gösterir. Bu normaldir — tarayıcı düzeyindeki değişiklik bu şekilde etkin kalır.",
+    "description": "Note explaining that Chrome's debugging banner is normal"
+  },
+  "btnRandomHint": {
+    "message": "Rastgele saat dilimi (kısayol Ctrl+Shift+Z)",
+    "description": "Tooltip on the random button mentioning the keyboard shortcut"
   }
 }

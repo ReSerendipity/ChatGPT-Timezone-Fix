@@ -301,5 +301,17 @@
   "favRemove": {
     "message": "Rimuovi",
     "description": "Remove from favorites"
+  },
+  "introTip": {
+    "message": "Scegli un fuso orario e clicca Applica — l'effetto viene verificato automaticamente.",
+    "description": "First-open tip shown at the top of the popup"
+  },
+  "cdpBannerNote": {
+    "message": "Chrome mostra un avviso di «debug» su questa scheda. È normale: è così che la modifica a livello di browser rimane attiva.",
+    "description": "Note explaining that Chrome's debugging banner is normal"
+  },
+  "btnRandomHint": {
+    "message": "Fuso casuale (scorciatoia Ctrl+Shift+Z)",
+    "description": "Tooltip on the random button mentioning the keyboard shortcut"
   }
 }
