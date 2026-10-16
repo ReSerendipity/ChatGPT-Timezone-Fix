@@ -1,0 +1,305 @@
+{
+  "extName": {
+    "message": "Alterar fuso horário",
+    "description": "Extension name shown in browser/extension stores"
+  },
+  "extShortName": {
+    "message": "Fuso horário",
+    "description": "Short extension name"
+  },
+  "extDescription": {
+    "message": "Altere o fuso horário do navegador por aba — aleatório ou personalizado — com verificação instantânea do efeito. Gratuito e de código aberto.",
+    "description": "Extension description"
+  },
+  "cmdRandom": {
+    "message": "Aplicar um fuso horário aleatório à aba atual",
+    "description": "Keyboard command description"
+  },
+  "labelMode": {
+    "message": "Método",
+    "description": "Override method label"
+  },
+  "modeAuto": {
+    "message": "Automático (preferir nível do navegador)",
+    "description": "Auto mode option"
+  },
+  "modeCdp": {
+    "message": "Fuso do navegador (depurador)",
+    "description": "CDP mode option"
+  },
+  "modeScript": {
+    "message": "Script da página (sobrescrever Date)",
+    "description": "Page-script mode option"
+  },
+  "modeAutoHint": {
+    "message": "Tenta primeiro a alteração no nível do navegador; se o depurador não puder ser anexado, usa o script da página.",
+    "description": "Hint for auto mode"
+  },
+  "modeCdpHint": {
+    "message": "Altera de verdade o fuso horário desta aba. O Chrome mostra um aviso de \"depuração\" na aba.",
+    "description": "Hint for CDP mode"
+  },
+  "modeScriptHint": {
+    "message": "Sobrescreve Date/Intl dentro da página. Leve, mas afeta apenas os scripts da página.",
+    "description": "Hint for page-script mode"
+  },
+  "labelTimezone": {
+    "message": "Fuso horário",
+    "description": "Timezone label"
+  },
+  "searchPlaceholder": {
+    "message": "Pesquisar fuso horário…",
+    "description": "Search input placeholder"
+  },
+  "groupPopular": {
+    "message": "Populares",
+    "description": "Popular timezone group"
+  },
+  "groupAll": {
+    "message": "Todos os fusos horários",
+    "description": "All timezones group"
+  },
+  "optionRandom": {
+    "message": "Fuso horário aleatório",
+    "description": "Random timezone option"
+  },
+  "optionSystem": {
+    "message": "Padrão do sistema",
+    "description": "System default option"
+  },
+  "btnApply": {
+    "message": "Aplicar",
+    "description": "Apply button"
+  },
+  "btnReset": {
+    "message": "Redefinir",
+    "description": "Reset button"
+  },
+  "btnVerify": {
+    "message": "Verificar",
+    "description": "Verify button"
+  },
+  "btnRandom": {
+    "message": "Aleatório",
+    "description": "Random button"
+  },
+  "btnOptions": {
+    "message": "Configurações",
+    "description": "Settings button"
+  },
+  "footerNote": {
+    "message": "Gratuito e de código aberto",
+    "description": "Popup footer note"
+  },
+  "statusApplied": {
+    "message": "Aplicado: $1",
+    "description": "Status when a timezone is applied ($1 = details)"
+  },
+  "statusNone": {
+    "message": "Padrão do sistema",
+    "description": "Status when using system default"
+  },
+  "labelPreview": {
+    "message": "Prévia",
+    "description": "Preview label"
+  },
+  "labelObserved": {
+    "message": "Observado",
+    "description": "Observed value label"
+  },
+  "labelExpected": {
+    "message": "Esperado",
+    "description": "Expected value label"
+  },
+  "verifyRunning": {
+    "message": "Verificando…",
+    "description": "Verification in progress"
+  },
+  "verifyPass": {
+    "message": "Verificado — a alteração está em efeito",
+    "description": "Verification passed"
+  },
+  "verifyFail": {
+    "message": "Sem efeito — o valor observado difere do fuso esperado",
+    "description": "Verification failed"
+  },
+  "verifyNeedPage": {
+    "message": "Mude para uma página web normal (http/https) e tente novamente",
+    "description": "Hint when the tab cannot be inspected"
+  },
+  "verifyDetached": {
+    "message": "O depurador foi desconectado — aplique novamente para restaurar",
+    "description": "Warning when the debugger was detached"
+  },
+  "btnVerifyNow": {
+    "message": "Verificar aba atual",
+    "description": "Verify button on options page"
+  },
+  "verifyObservedName": {
+    "message": "Fuso observado",
+    "description": "Observed timezone row"
+  },
+  "verifyObservedOffset": {
+    "message": "Desvio UTC observado",
+    "description": "Observed UTC offset row"
+  },
+  "verifyObservedTime": {
+    "message": "Hora local observada",
+    "description": "Observed local time row"
+  },
+  "verifyResult": {
+    "message": "Resultado",
+    "description": "Result row label"
+  },
+  "errDebuggerAttach": {
+    "message": "Não foi possível anexar o depurador; alternando para o modo script da página",
+    "description": "Error when the debugger cannot be attached"
+  },
+  "errAlreadyDebugging": {
+    "message": "O DevTools já está anexado a esta aba — feche-o ou troque o método",
+    "description": "Error when DevTools is already attached"
+  },
+  "labelLanguage": {
+    "message": "Idioma",
+    "description": "Language setting label"
+  },
+  "langAuto": {
+    "message": "Seguir o idioma do navegador",
+    "description": "Follow browser language option"
+  },
+  "sectionGeneral": {
+    "message": "Geral",
+    "description": "General settings section"
+  },
+  "sectionBehavior": {
+    "message": "Comportamento",
+    "description": "Behavior settings section"
+  },
+  "sectionVerify": {
+    "message": "Verificação",
+    "description": "Verification section"
+  },
+  "sectionAbout": {
+    "message": "Sobre",
+    "description": "About section"
+  },
+  "labelDefaultMode": {
+    "message": "Método padrão",
+    "description": "Default method setting"
+  },
+  "labelDefaultTimezone": {
+    "message": "Fuso horário padrão",
+    "description": "Default timezone setting"
+  },
+  "labelReloadOnApply": {
+    "message": "Recarregar a aba após aplicar (modo script da página)",
+    "description": "Reload-after-apply setting"
+  },
+  "labelBadge": {
+    "message": "Mostrar selo flutuante de verificação nas páginas",
+    "description": "Floating badge setting"
+  },
+  "verifyDesc": {
+    "message": "A verificação lê o fuso horário que a página atual realmente vê e o compara com sua seleção.",
+    "description": "Verification section description"
+  },
+  "aboutText": {
+    "description": "About section text"
+  },
+  "linkSource": {
+    "message": "Código-fonte",
+    "description": "Source code link"
+  },
+  "btnSave": {
+    "message": "Salvar",
+    "description": "Save button"
+  },
+  "savedTip": {
+    "message": "Salvo",
+    "description": "Saved confirmation"
+  },
+  "labelVersion": {
+    "message": "Versão",
+    "description": "Version label"
+  },
+  "optionsTitle": {
+    "message": "Alterar fuso horário — Configurações",
+    "description": "Options page subtitle"
+  },
+  "badgeTitle": {
+    "message": "Fuso horário em efeito",
+    "description": "Floating badge title"
+  },
+  "badgeExpected": {
+    "message": "Esperado",
+    "description": "Badge expected label"
+  },
+  "badgeOk": {
+    "message": "Em efeito",
+    "description": "Badge in-effect chip"
+  },
+  "badgeNo": {
+    "message": "Sem efeito",
+    "description": "Badge not-in-effect chip"
+  },
+  "badgeClose": {
+    "message": "Fechar",
+    "description": "Badge close button"
+  },
+  "regionAfrica": {
+    "message": "África",
+    "description": "Region Africa"
+  },
+  "regionAmerica": {
+    "message": "Américas",
+    "description": "Region Americas"
+  },
+  "regionAntarctica": {
+    "message": "Antártida",
+    "description": "Region Antarctica"
+  },
+  "regionAsia": {
+    "message": "Ásia",
+    "description": "Region Asia"
+  },
+  "regionAtlantic": {
+    "message": "Atlântico",
+    "description": "Region Atlantic"
+  },
+  "regionAustralia": {
+    "message": "Austrália e Oceania",
+    "description": "Region Australia"
+  },
+  "regionEurope": {
+    "message": "Europa",
+    "description": "Region Europe"
+  },
+  "regionIndian": {
+    "message": "Oceano Índico",
+    "description": "Region Indian Ocean"
+  },
+  "regionPacific": {
+    "message": "Pacífico",
+    "description": "Region Pacific"
+  },
+  "regionEtc": {
+    "message": "Deslocamentos GMT",
+    "description": "Region Etc (fixed GMT offsets)"
+  },
+  "regionOther": {
+    "message": "Outros",
+    "description": "Region other"
+  },
+  "labelFavorites": {
+    "message": "Favoritos",
+    "description": "Favorites label"
+  },
+  "favAdd": {
+    "message": "Adicionar",
+    "description": "Add to favorites"
+  },
+  "favRemove": {
+    "message": "Remover",
+    "description": "Remove from favorites"
+  }
+}

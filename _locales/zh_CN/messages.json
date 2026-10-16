@@ -1,0 +1,305 @@
+{
+  "extName": {
+    "message": "修改时区",
+    "description": "Extension name shown in browser/extension stores"
+  },
+  "extShortName": {
+    "message": "时区切换",
+    "description": "Short extension name"
+  },
+  "extDescription": {
+    "message": "按标签页切换浏览器时区，支持随机或指定时区，并即时验证修改是否生效。免费开源。",
+    "description": "Extension description"
+  },
+  "cmdRandom": {
+    "message": "为当前标签页应用随机时区",
+    "description": "Keyboard command description"
+  },
+  "labelMode": {
+    "message": "修改方式",
+    "description": "Override method label"
+  },
+  "modeAuto": {
+    "message": "自动（优先浏览器级）",
+    "description": "Auto mode option"
+  },
+  "modeCdp": {
+    "message": "浏览器时区（调试器）",
+    "description": "CDP mode option"
+  },
+  "modeScript": {
+    "message": "页面脚本（Date 重写）",
+    "description": "Page-script mode option"
+  },
+  "modeAutoHint": {
+    "message": "优先使用浏览器级时区覆盖；若调试器无法附加，则自动回退为页面脚本方式。",
+    "description": "Hint for auto mode"
+  },
+  "modeCdpHint": {
+    "message": "真正改变该标签页的时区。Chrome 会在标签页上显示「正在调试」提示条。",
+    "description": "Hint for CDP mode"
+  },
+  "modeScriptHint": {
+    "message": "在页面内重写 Date/Intl。轻量，但仅影响页面脚本。",
+    "description": "Hint for page-script mode"
+  },
+  "labelTimezone": {
+    "message": "时区",
+    "description": "Timezone label"
+  },
+  "searchPlaceholder": {
+    "message": "搜索时区…",
+    "description": "Search input placeholder"
+  },
+  "groupPopular": {
+    "message": "常用",
+    "description": "Popular timezone group"
+  },
+  "groupAll": {
+    "message": "全部时区",
+    "description": "All timezones group"
+  },
+  "optionRandom": {
+    "message": "随机时区",
+    "description": "Random timezone option"
+  },
+  "optionSystem": {
+    "message": "系统默认",
+    "description": "System default option"
+  },
+  "btnApply": {
+    "message": "应用",
+    "description": "Apply button"
+  },
+  "btnReset": {
+    "message": "恢复",
+    "description": "Reset button"
+  },
+  "btnVerify": {
+    "message": "验证",
+    "description": "Verify button"
+  },
+  "btnRandom": {
+    "message": "随机",
+    "description": "Random button"
+  },
+  "btnOptions": {
+    "message": "设置",
+    "description": "Settings button"
+  },
+  "footerNote": {
+    "message": "免费开源",
+    "description": "Popup footer note"
+  },
+  "statusApplied": {
+    "message": "已应用：$1",
+    "description": "Status when a timezone is applied ($1 = details)"
+  },
+  "statusNone": {
+    "message": "系统默认",
+    "description": "Status when using system default"
+  },
+  "labelPreview": {
+    "message": "预览",
+    "description": "Preview label"
+  },
+  "labelObserved": {
+    "message": "实际观测",
+    "description": "Observed value label"
+  },
+  "labelExpected": {
+    "message": "期望值",
+    "description": "Expected value label"
+  },
+  "verifyRunning": {
+    "message": "正在验证…",
+    "description": "Verification in progress"
+  },
+  "verifyPass": {
+    "message": "验证通过——时区覆盖已生效",
+    "description": "Verification passed"
+  },
+  "verifyFail": {
+    "message": "未生效——实际观测值与期望时区不一致",
+    "description": "Verification failed"
+  },
+  "verifyNeedPage": {
+    "message": "请切换到普通网页（http/https）后重试",
+    "description": "Hint when the tab cannot be inspected"
+  },
+  "verifyDetached": {
+    "message": "调试器已分离——请重新应用以恢复时区覆盖",
+    "description": "Warning when the debugger was detached"
+  },
+  "btnVerifyNow": {
+    "message": "验证当前标签页",
+    "description": "Verify button on options page"
+  },
+  "verifyObservedName": {
+    "message": "实际观测时区",
+    "description": "Observed timezone row"
+  },
+  "verifyObservedOffset": {
+    "message": "实际观测 UTC 偏移",
+    "description": "Observed UTC offset row"
+  },
+  "verifyObservedTime": {
+    "message": "实际观测本地时间",
+    "description": "Observed local time row"
+  },
+  "verifyResult": {
+    "message": "结果",
+    "description": "Result row label"
+  },
+  "errDebuggerAttach": {
+    "message": "无法附加调试器，已切换为页面脚本模式",
+    "description": "Error when the debugger cannot be attached"
+  },
+  "errAlreadyDebugging": {
+    "message": "该标签页已附加 DevTools——请关闭或切换修改方式",
+    "description": "Error when DevTools is already attached"
+  },
+  "labelLanguage": {
+    "message": "语言",
+    "description": "Language setting label"
+  },
+  "langAuto": {
+    "message": "跟随浏览器语言",
+    "description": "Follow browser language option"
+  },
+  "sectionGeneral": {
+    "message": "常规",
+    "description": "General settings section"
+  },
+  "sectionBehavior": {
+    "message": "行为",
+    "description": "Behavior settings section"
+  },
+  "sectionVerify": {
+    "message": "验证",
+    "description": "Verification section"
+  },
+  "sectionAbout": {
+    "message": "关于",
+    "description": "About section"
+  },
+  "labelDefaultMode": {
+    "message": "默认修改方式",
+    "description": "Default method setting"
+  },
+  "labelDefaultTimezone": {
+    "message": "默认时区",
+    "description": "Default timezone setting"
+  },
+  "labelReloadOnApply": {
+    "message": "应用后重新加载标签页（页面脚本模式）",
+    "description": "Reload-after-apply setting"
+  },
+  "labelBadge": {
+    "message": "在页面上显示悬浮验证徽标",
+    "description": "Floating badge setting"
+  },
+  "verifyDesc": {
+    "message": "验证会读取当前网页实际看到的时区，并与你的选择进行比对。",
+    "description": "Verification section description"
+  },
+  "aboutText": {
+    "description": "About section text"
+  },
+  "linkSource": {
+    "message": "源代码",
+    "description": "Source code link"
+  },
+  "btnSave": {
+    "message": "保存",
+    "description": "Save button"
+  },
+  "savedTip": {
+    "message": "已保存",
+    "description": "Saved confirmation"
+  },
+  "labelVersion": {
+    "message": "版本",
+    "description": "Version label"
+  },
+  "optionsTitle": {
+    "message": "修改时区 —— 设置",
+    "description": "Options page subtitle"
+  },
+  "badgeTitle": {
+    "message": "时区已生效",
+    "description": "Floating badge title"
+  },
+  "badgeExpected": {
+    "message": "期望",
+    "description": "Badge expected label"
+  },
+  "badgeOk": {
+    "message": "已生效",
+    "description": "Badge in-effect chip"
+  },
+  "badgeNo": {
+    "message": "未生效",
+    "description": "Badge not-in-effect chip"
+  },
+  "badgeClose": {
+    "message": "关闭",
+    "description": "Badge close button"
+  },
+  "regionAfrica": {
+    "message": "非洲",
+    "description": "Region Africa"
+  },
+  "regionAmerica": {
+    "message": "美洲",
+    "description": "Region Americas"
+  },
+  "regionAntarctica": {
+    "message": "南极洲",
+    "description": "Region Antarctica"
+  },
+  "regionAsia": {
+    "message": "亚洲",
+    "description": "Region Asia"
+  },
+  "regionAtlantic": {
+    "message": "大西洋",
+    "description": "Region Atlantic"
+  },
+  "regionAustralia": {
+    "message": "澳大利亚与大洋洲",
+    "description": "Region Australia"
+  },
+  "regionEurope": {
+    "message": "欧洲",
+    "description": "Region Europe"
+  },
+  "regionIndian": {
+    "message": "印度洋",
+    "description": "Region Indian Ocean"
+  },
+  "regionPacific": {
+    "message": "太平洋",
+    "description": "Region Pacific"
+  },
+  "regionEtc": {
+    "message": "GMT 偏移",
+    "description": "Region Etc (fixed GMT offsets)"
+  },
+  "regionOther": {
+    "message": "其他",
+    "description": "Region other"
+  },
+  "labelFavorites": {
+    "message": "收藏",
+    "description": "Favorites label"
+  },
+  "favAdd": {
+    "message": "收藏",
+    "description": "Add to favorites"
+  },
+  "favRemove": {
+    "message": "取消收藏",
+    "description": "Remove from favorites"
+  }
+}

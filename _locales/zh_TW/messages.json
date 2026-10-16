@@ -1,0 +1,305 @@
+{
+  "extName": {
+    "message": "修改時區",
+    "description": "Extension name shown in browser/extension stores"
+  },
+  "extShortName": {
+    "message": "時區切換",
+    "description": "Short extension name"
+  },
+  "extDescription": {
+    "message": "依標籤頁切換瀏覽器時區，支援隨機或指定時區，並即時驗證修改是否生效。免費開源。",
+    "description": "Extension description"
+  },
+  "cmdRandom": {
+    "message": "為目前標籤頁套用隨機時區",
+    "description": "Keyboard command description"
+  },
+  "labelMode": {
+    "message": "修改方式",
+    "description": "Override method label"
+  },
+  "modeAuto": {
+    "message": "自動（優先瀏覽器層級）",
+    "description": "Auto mode option"
+  },
+  "modeCdp": {
+    "message": "瀏覽器時區（偵錯工具）",
+    "description": "CDP mode option"
+  },
+  "modeScript": {
+    "message": "頁面腳本（Date 覆寫）",
+    "description": "Page-script mode option"
+  },
+  "modeAutoHint": {
+    "message": "優先使用瀏覽器層級的時區覆寫；若無法附加偵錯工具，則自動改以頁面腳本方式處理。",
+    "description": "Hint for auto mode"
+  },
+  "modeCdpHint": {
+    "message": "真正改變此標籤頁的時區。Chrome 會在標籤頁上顯示「正在偵錯」提示。",
+    "description": "Hint for CDP mode"
+  },
+  "modeScriptHint": {
+    "message": "在頁面內覆寫 Date/Intl。輕量，但僅影響頁面指令碼。",
+    "description": "Hint for page-script mode"
+  },
+  "labelTimezone": {
+    "message": "時區",
+    "description": "Timezone label"
+  },
+  "searchPlaceholder": {
+    "message": "搜尋時區…",
+    "description": "Search input placeholder"
+  },
+  "groupPopular": {
+    "message": "常用",
+    "description": "Popular timezone group"
+  },
+  "groupAll": {
+    "message": "全部時區",
+    "description": "All timezones group"
+  },
+  "optionRandom": {
+    "message": "隨機時區",
+    "description": "Random timezone option"
+  },
+  "optionSystem": {
+    "message": "系統預設",
+    "description": "System default option"
+  },
+  "btnApply": {
+    "message": "套用",
+    "description": "Apply button"
+  },
+  "btnReset": {
+    "message": "重設",
+    "description": "Reset button"
+  },
+  "btnVerify": {
+    "message": "驗證",
+    "description": "Verify button"
+  },
+  "btnRandom": {
+    "message": "隨機",
+    "description": "Random button"
+  },
+  "btnOptions": {
+    "message": "設定",
+    "description": "Settings button"
+  },
+  "footerNote": {
+    "message": "免費開源",
+    "description": "Popup footer note"
+  },
+  "statusApplied": {
+    "message": "已套用：$1",
+    "description": "Status when a timezone is applied ($1 = details)"
+  },
+  "statusNone": {
+    "message": "系統預設",
+    "description": "Status when using system default"
+  },
+  "labelPreview": {
+    "message": "預覽",
+    "description": "Preview label"
+  },
+  "labelObserved": {
+    "message": "實際觀測",
+    "description": "Observed value label"
+  },
+  "labelExpected": {
+    "message": "預期值",
+    "description": "Expected value label"
+  },
+  "verifyRunning": {
+    "message": "正在驗證…",
+    "description": "Verification in progress"
+  },
+  "verifyPass": {
+    "message": "驗證通過——時區覆寫已生效",
+    "description": "Verification passed"
+  },
+  "verifyFail": {
+    "message": "未生效——實際觀測值與預期時區不一致",
+    "description": "Verification failed"
+  },
+  "verifyNeedPage": {
+    "message": "請切換到一般網頁（http/https）後重試",
+    "description": "Hint when the tab cannot be inspected"
+  },
+  "verifyDetached": {
+    "message": "偵錯工具已中斷——請重新套用以恢復時區覆寫",
+    "description": "Warning when the debugger was detached"
+  },
+  "btnVerifyNow": {
+    "message": "驗證目前標籤頁",
+    "description": "Verify button on options page"
+  },
+  "verifyObservedName": {
+    "message": "實際觀測時區",
+    "description": "Observed timezone row"
+  },
+  "verifyObservedOffset": {
+    "message": "實際觀測 UTC 偏移",
+    "description": "Observed UTC offset row"
+  },
+  "verifyObservedTime": {
+    "message": "實際觀測本地時間",
+    "description": "Observed local time row"
+  },
+  "verifyResult": {
+    "message": "結果",
+    "description": "Result row label"
+  },
+  "errDebuggerAttach": {
+    "message": "無法附加偵錯工具，已切換為頁面腳本模式",
+    "description": "Error when the debugger cannot be attached"
+  },
+  "errAlreadyDebugging": {
+    "message": "此標籤頁已附加 DevTools——請將其關閉或切換修改方式",
+    "description": "Error when DevTools is already attached"
+  },
+  "labelLanguage": {
+    "message": "語言",
+    "description": "Language setting label"
+  },
+  "langAuto": {
+    "message": "跟隨瀏覽器語言",
+    "description": "Follow browser language option"
+  },
+  "sectionGeneral": {
+    "message": "一般",
+    "description": "General settings section"
+  },
+  "sectionBehavior": {
+    "message": "行為",
+    "description": "Behavior settings section"
+  },
+  "sectionVerify": {
+    "message": "驗證",
+    "description": "Verification section"
+  },
+  "sectionAbout": {
+    "message": "關於",
+    "description": "About section"
+  },
+  "labelDefaultMode": {
+    "message": "預設修改方式",
+    "description": "Default method setting"
+  },
+  "labelDefaultTimezone": {
+    "message": "預設時區",
+    "description": "Default timezone setting"
+  },
+  "labelReloadOnApply": {
+    "message": "套用後重新載入標籤頁（頁面腳本模式）",
+    "description": "Reload-after-apply setting"
+  },
+  "labelBadge": {
+    "message": "在頁面上顯示懸浮驗證徽標",
+    "description": "Floating badge setting"
+  },
+  "verifyDesc": {
+    "message": "驗證會讀取目前網頁實際看到的時區，並與你的選擇進行比對。",
+    "description": "Verification section description"
+  },
+  "aboutText": {
+    "description": "About section text"
+  },
+  "linkSource": {
+    "message": "原始碼",
+    "description": "Source code link"
+  },
+  "btnSave": {
+    "message": "儲存",
+    "description": "Save button"
+  },
+  "savedTip": {
+    "message": "已儲存",
+    "description": "Saved confirmation"
+  },
+  "labelVersion": {
+    "message": "版本",
+    "description": "Version label"
+  },
+  "optionsTitle": {
+    "message": "修改時區 —— 設定",
+    "description": "Options page subtitle"
+  },
+  "badgeTitle": {
+    "message": "時區已生效",
+    "description": "Floating badge title"
+  },
+  "badgeExpected": {
+    "message": "預期",
+    "description": "Badge expected label"
+  },
+  "badgeOk": {
+    "message": "已生效",
+    "description": "Badge in-effect chip"
+  },
+  "badgeNo": {
+    "message": "未生效",
+    "description": "Badge not-in-effect chip"
+  },
+  "badgeClose": {
+    "message": "關閉",
+    "description": "Badge close button"
+  },
+  "regionAfrica": {
+    "message": "非洲",
+    "description": "Region Africa"
+  },
+  "regionAmerica": {
+    "message": "美洲",
+    "description": "Region Americas"
+  },
+  "regionAntarctica": {
+    "message": "南極洲",
+    "description": "Region Antarctica"
+  },
+  "regionAsia": {
+    "message": "亞洲",
+    "description": "Region Asia"
+  },
+  "regionAtlantic": {
+    "message": "大西洋",
+    "description": "Region Atlantic"
+  },
+  "regionAustralia": {
+    "message": "澳洲與大洋洲",
+    "description": "Region Australia"
+  },
+  "regionEurope": {
+    "message": "歐洲",
+    "description": "Region Europe"
+  },
+  "regionIndian": {
+    "message": "印度洋",
+    "description": "Region Indian Ocean"
+  },
+  "regionPacific": {
+    "message": "太平洋",
+    "description": "Region Pacific"
+  },
+  "regionEtc": {
+    "message": "GMT 偏移",
+    "description": "Region Etc (fixed GMT offsets)"
+  },
+  "regionOther": {
+    "message": "其他",
+    "description": "Region other"
+  },
+  "labelFavorites": {
+    "message": "收藏",
+    "description": "Favorites label"
+  },
+  "favAdd": {
+    "message": "收藏",
+    "description": "Add to favorites"
+  },
+  "favRemove": {
+    "message": "取消收藏",
+    "description": "Remove from favorites"
+  }
+}

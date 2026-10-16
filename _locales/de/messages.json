@@ -1,0 +1,305 @@
+{
+  "extName": {
+    "message": "Zeitzone ändern",
+    "description": "Extension name shown in browser/extension stores"
+  },
+  "extShortName": {
+    "message": "Zeitzone",
+    "description": "Short extension name"
+  },
+  "extDescription": {
+    "message": "Wechsle die Zeitzone des Browsers pro Tab — zufällig oder selbst gewählt — mit sofortiger Wirksamkeitsprüfung. Kostenlos und Open Source.",
+    "description": "Extension description"
+  },
+  "cmdRandom": {
+    "message": "Zufällige Zeitzone auf den aktuellen Tab anwenden",
+    "description": "Keyboard command description"
+  },
+  "labelMode": {
+    "message": "Methode",
+    "description": "Override method label"
+  },
+  "modeAuto": {
+    "message": "Automatisch (Browser-Ebene bevorzugt)",
+    "description": "Auto mode option"
+  },
+  "modeCdp": {
+    "message": "Browser-Zeitzone (Debugger)",
+    "description": "CDP mode option"
+  },
+  "modeScript": {
+    "message": "Seiten-Skript (Date überschreiben)",
+    "description": "Page-script mode option"
+  },
+  "modeAutoHint": {
+    "message": "Versucht zuerst die Änderung auf Browser-Ebene; falls der Debugger nicht angehängt werden kann, wird auf das Seiten-Skript ausgewichen.",
+    "description": "Hint for auto mode"
+  },
+  "modeCdpHint": {
+    "message": "Ändert die Zeitzone dieses Tabs tatsächlich. Chrome zeigt auf dem Tab einen „Debugging“-Hinweis.",
+    "description": "Hint for CDP mode"
+  },
+  "modeScriptHint": {
+    "message": "Überschreibt Date/Intl innerhalb der Seite. Leicht, wirkt aber nur auf Seiten-Skripte.",
+    "description": "Hint for page-script mode"
+  },
+  "labelTimezone": {
+    "message": "Zeitzone",
+    "description": "Timezone label"
+  },
+  "searchPlaceholder": {
+    "message": "Zeitzone suchen…",
+    "description": "Search input placeholder"
+  },
+  "groupPopular": {
+    "message": "Beliebt",
+    "description": "Popular timezone group"
+  },
+  "groupAll": {
+    "message": "Alle Zeitzonen",
+    "description": "All timezones group"
+  },
+  "optionRandom": {
+    "message": "Zufällige Zeitzone",
+    "description": "Random timezone option"
+  },
+  "optionSystem": {
+    "message": "Systemstandard",
+    "description": "System default option"
+  },
+  "btnApply": {
+    "message": "Anwenden",
+    "description": "Apply button"
+  },
+  "btnReset": {
+    "message": "Zurücksetzen",
+    "description": "Reset button"
+  },
+  "btnVerify": {
+    "message": "Prüfen",
+    "description": "Verify button"
+  },
+  "btnRandom": {
+    "message": "Zufall",
+    "description": "Random button"
+  },
+  "btnOptions": {
+    "message": "Einstellungen",
+    "description": "Settings button"
+  },
+  "footerNote": {
+    "message": "Kostenlos & Open Source",
+    "description": "Popup footer note"
+  },
+  "statusApplied": {
+    "message": "Angewendet: $1",
+    "description": "Status when a timezone is applied ($1 = details)"
+  },
+  "statusNone": {
+    "message": "Systemstandard",
+    "description": "Status when using system default"
+  },
+  "labelPreview": {
+    "message": "Vorschau",
+    "description": "Preview label"
+  },
+  "labelObserved": {
+    "message": "Beobachtet",
+    "description": "Observed value label"
+  },
+  "labelExpected": {
+    "message": "Erwartet",
+    "description": "Expected value label"
+  },
+  "verifyRunning": {
+    "message": "Prüfe…",
+    "description": "Verification in progress"
+  },
+  "verifyPass": {
+    "message": "Geprüft — die Änderung ist wirksam",
+    "description": "Verification passed"
+  },
+  "verifyFail": {
+    "message": "Nicht wirksam — der beobachtete Wert weicht von der erwarteten Zeitzone ab",
+    "description": "Verification failed"
+  },
+  "verifyNeedPage": {
+    "message": "Wechsle zu einer normalen Webseite (http/https) und versuche es erneut",
+    "description": "Hint when the tab cannot be inspected"
+  },
+  "verifyDetached": {
+    "message": "Der Debugger wurde getrennt — erneut anwenden, um die Änderung wiederherzustellen",
+    "description": "Warning when the debugger was detached"
+  },
+  "btnVerifyNow": {
+    "message": "Aktuellen Tab prüfen",
+    "description": "Verify button on options page"
+  },
+  "verifyObservedName": {
+    "message": "Beobachtete Zeitzone",
+    "description": "Observed timezone row"
+  },
+  "verifyObservedOffset": {
+    "message": "Beobachteter UTC-Offset",
+    "description": "Observed UTC offset row"
+  },
+  "verifyObservedTime": {
+    "message": "Beobachtete lokale Zeit",
+    "description": "Observed local time row"
+  },
+  "verifyResult": {
+    "message": "Ergebnis",
+    "description": "Result row label"
+  },
+  "errDebuggerAttach": {
+    "message": "Debugger konnte nicht angehängt werden; Wechsel zum Seiten-Skript-Modus",
+    "description": "Error when the debugger cannot be attached"
+  },
+  "errAlreadyDebugging": {
+    "message": "DevTools ist bereits mit diesem Tab verbunden — schließe es oder wechsle die Methode",
+    "description": "Error when DevTools is already attached"
+  },
+  "labelLanguage": {
+    "message": "Sprache",
+    "description": "Language setting label"
+  },
+  "langAuto": {
+    "message": "Browsersprache folgen",
+    "description": "Follow browser language option"
+  },
+  "sectionGeneral": {
+    "message": "Allgemein",
+    "description": "General settings section"
+  },
+  "sectionBehavior": {
+    "message": "Verhalten",
+    "description": "Behavior settings section"
+  },
+  "sectionVerify": {
+    "message": "Prüfung",
+    "description": "Verification section"
+  },
+  "sectionAbout": {
+    "message": "Über",
+    "description": "About section"
+  },
+  "labelDefaultMode": {
+    "message": "Standardmethode",
+    "description": "Default method setting"
+  },
+  "labelDefaultTimezone": {
+    "message": "Standardzeitzone",
+    "description": "Default timezone setting"
+  },
+  "labelReloadOnApply": {
+    "message": "Tab nach dem Anwenden neu laden (Seiten-Skript-Modus)",
+    "description": "Reload-after-apply setting"
+  },
+  "labelBadge": {
+    "message": "Schwebendes Prüf-Badge auf Seiten anzeigen",
+    "description": "Floating badge setting"
+  },
+  "verifyDesc": {
+    "message": "Die Prüfung liest die Zeitzone, die die aktuelle Seite tatsächlich sieht, und vergleicht sie mit deiner Auswahl.",
+    "description": "Verification section description"
+  },
+  "aboutText": {
+    "description": "About section text"
+  },
+  "linkSource": {
+    "message": "Quellcode",
+    "description": "Source code link"
+  },
+  "btnSave": {
+    "message": "Speichern",
+    "description": "Save button"
+  },
+  "savedTip": {
+    "message": "Gespeichert",
+    "description": "Saved confirmation"
+  },
+  "labelVersion": {
+    "message": "Version",
+    "description": "Version label"
+  },
+  "optionsTitle": {
+    "message": "Zeitzone ändern — Einstellungen",
+    "description": "Options page subtitle"
+  },
+  "badgeTitle": {
+    "message": "Wirksame Zeitzone",
+    "description": "Floating badge title"
+  },
+  "badgeExpected": {
+    "message": "Erwartet",
+    "description": "Badge expected label"
+  },
+  "badgeOk": {
+    "message": "Wirksam",
+    "description": "Badge in-effect chip"
+  },
+  "badgeNo": {
+    "message": "Nicht wirksam",
+    "description": "Badge not-in-effect chip"
+  },
+  "badgeClose": {
+    "message": "Schließen",
+    "description": "Badge close button"
+  },
+  "regionAfrica": {
+    "message": "Afrika",
+    "description": "Region Africa"
+  },
+  "regionAmerica": {
+    "message": "Amerika",
+    "description": "Region Americas"
+  },
+  "regionAntarctica": {
+    "message": "Antarktis",
+    "description": "Region Antarctica"
+  },
+  "regionAsia": {
+    "message": "Asien",
+    "description": "Region Asia"
+  },
+  "regionAtlantic": {
+    "message": "Atlantik",
+    "description": "Region Atlantic"
+  },
+  "regionAustralia": {
+    "message": "Australien & Ozeanien",
+    "description": "Region Australia"
+  },
+  "regionEurope": {
+    "message": "Europa",
+    "description": "Region Europe"
+  },
+  "regionIndian": {
+    "message": "Indischer Ozean",
+    "description": "Region Indian Ocean"
+  },
+  "regionPacific": {
+    "message": "Pazifik",
+    "description": "Region Pacific"
+  },
+  "regionEtc": {
+    "message": "GMT-Verschiebungen",
+    "description": "Region Etc (fixed GMT offsets)"
+  },
+  "regionOther": {
+    "message": "Sonstige",
+    "description": "Region other"
+  },
+  "labelFavorites": {
+    "message": "Favoriten",
+    "description": "Favorites label"
+  },
+  "favAdd": {
+    "message": "Hinzufügen",
+    "description": "Add to favorites"
+  },
+  "favRemove": {
+    "message": "Entfernen",
+    "description": "Remove from favorites"
+  }
+}

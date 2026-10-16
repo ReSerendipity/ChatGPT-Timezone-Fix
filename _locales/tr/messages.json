@@ -1,0 +1,305 @@
+{
+  "extName": {
+    "message": "Saat dilimini değiştir",
+    "description": "Extension name shown in browser/extension stores"
+  },
+  "extShortName": {
+    "message": "Saat dilimi",
+    "description": "Short extension name"
+  },
+  "extDescription": {
+    "message": "Sekme başına tarayıcı saat dilimini değiştir — rastgele veya seçili — ve etkisini anında doğrula. Ücretsiz ve açık kaynak.",
+    "description": "Extension description"
+  },
+  "cmdRandom": {
+    "message": "Geçerli sekmeye rastgele saat dilimi uygula",
+    "description": "Keyboard command description"
+  },
+  "labelMode": {
+    "message": "Yöntem",
+    "description": "Override method label"
+  },
+  "modeAuto": {
+    "message": "Otomatik (tarayıcı düzeyi öncelikli)",
+    "description": "Auto mode option"
+  },
+  "modeCdp": {
+    "message": "Tarayıcı saat dilimi (hata ayıklayıcı)",
+    "description": "CDP mode option"
+  },
+  "modeScript": {
+    "message": "Sayfa betiği (Date geçersizleştirme)",
+    "description": "Page-script mode option"
+  },
+  "modeAutoHint": {
+    "message": "Önce tarayıcı düzeyinde değişimi dener; hata ayıklayıcı bağlanamazsa sayfa betiğine döner.",
+    "description": "Hint for auto mode"
+  },
+  "modeCdpHint": {
+    "message": "Bu sekmenin saat dilimini gerçekten değiştirir. Chrome sekmede bir \"hata ayıklama\" bandı gösterir.",
+    "description": "Hint for CDP mode"
+  },
+  "modeScriptHint": {
+    "message": "Sayfa içindeki Date/Intl'i geçersizleştirir. Hafif, ama yalnızca sayfa betiklerini etkiler.",
+    "description": "Hint for page-script mode"
+  },
+  "labelTimezone": {
+    "message": "Saat dilimi",
+    "description": "Timezone label"
+  },
+  "searchPlaceholder": {
+    "message": "Saat dilimi ara…",
+    "description": "Search input placeholder"
+  },
+  "groupPopular": {
+    "message": "Popüler",
+    "description": "Popular timezone group"
+  },
+  "groupAll": {
+    "message": "Tüm saat dilimleri",
+    "description": "All timezones group"
+  },
+  "optionRandom": {
+    "message": "Rastgele saat dilimi",
+    "description": "Random timezone option"
+  },
+  "optionSystem": {
+    "message": "Sistem varsayılanı",
+    "description": "System default option"
+  },
+  "btnApply": {
+    "message": "Uygula",
+    "description": "Apply button"
+  },
+  "btnReset": {
+    "message": "Sıfırla",
+    "description": "Reset button"
+  },
+  "btnVerify": {
+    "message": "Doğrula",
+    "description": "Verify button"
+  },
+  "btnRandom": {
+    "message": "Rastgele",
+    "description": "Random button"
+  },
+  "btnOptions": {
+    "message": "Ayarlar",
+    "description": "Settings button"
+  },
+  "footerNote": {
+    "message": "Ücretsiz ve açık kaynak",
+    "description": "Popup footer note"
+  },
+  "statusApplied": {
+    "message": "Uygulandı: $1",
+    "description": "Status when a timezone is applied ($1 = details)"
+  },
+  "statusNone": {
+    "message": "Sistem varsayılanı",
+    "description": "Status when using system default"
+  },
+  "labelPreview": {
+    "message": "Önizleme",
+    "description": "Preview label"
+  },
+  "labelObserved": {
+    "message": "Gözlenen",
+    "description": "Observed value label"
+  },
+  "labelExpected": {
+    "message": "Beklenen",
+    "description": "Expected value label"
+  },
+  "verifyRunning": {
+    "message": "Doğrulanıyor…",
+    "description": "Verification in progress"
+  },
+  "verifyPass": {
+    "message": "Doğrulandı — değişiklik etkin",
+    "description": "Verification passed"
+  },
+  "verifyFail": {
+    "message": "Etkin değil — gözlenen değer beklenen saat diliminden farklı",
+    "description": "Verification failed"
+  },
+  "verifyNeedPage": {
+    "message": "Normal bir web sayfasına (http/https) geç ve yeniden dene",
+    "description": "Hint when the tab cannot be inspected"
+  },
+  "verifyDetached": {
+    "message": "Hata ayıklayıcı ayrıldı — değişikliği geri getirmek için yeniden uygula",
+    "description": "Warning when the debugger was detached"
+  },
+  "btnVerifyNow": {
+    "message": "Geçerli sekmeyi doğrula",
+    "description": "Verify button on options page"
+  },
+  "verifyObservedName": {
+    "message": "Gözlenen saat dilimi",
+    "description": "Observed timezone row"
+  },
+  "verifyObservedOffset": {
+    "message": "Gözlenen UTC farkı",
+    "description": "Observed UTC offset row"
+  },
+  "verifyObservedTime": {
+    "message": "Gözlenen yerel saat",
+    "description": "Observed local time row"
+  },
+  "verifyResult": {
+    "message": "Sonuç",
+    "description": "Result row label"
+  },
+  "errDebuggerAttach": {
+    "message": "Hata ayıklayıcı bağlanamadı; sayfa betiği moduna geçildi",
+    "description": "Error when the debugger cannot be attached"
+  },
+  "errAlreadyDebugging": {
+    "message": "Bu sekmeye DevTools zaten bağlı — kapat veya yöntemi değiştir",
+    "description": "Error when DevTools is already attached"
+  },
+  "labelLanguage": {
+    "message": "Dil",
+    "description": "Language setting label"
+  },
+  "langAuto": {
+    "message": "Tarayıcı dilini kullan",
+    "description": "Follow browser language option"
+  },
+  "sectionGeneral": {
+    "message": "Genel",
+    "description": "General settings section"
+  },
+  "sectionBehavior": {
+    "message": "Davranış",
+    "description": "Behavior settings section"
+  },
+  "sectionVerify": {
+    "message": "Doğrulama",
+    "description": "Verification section"
+  },
+  "sectionAbout": {
+    "message": "Hakkında",
+    "description": "About section"
+  },
+  "labelDefaultMode": {
+    "message": "Varsayılan yöntem",
+    "description": "Default method setting"
+  },
+  "labelDefaultTimezone": {
+    "message": "Varsayılan saat dilimi",
+    "description": "Default timezone setting"
+  },
+  "labelReloadOnApply": {
+    "message": "Uyguladıktan sonra sekmeyi yenile (sayfa betiği modu)",
+    "description": "Reload-after-apply setting"
+  },
+  "labelBadge": {
+    "message": "Sayfalarda yüzen doğrulama rozetini göster",
+    "description": "Floating badge setting"
+  },
+  "verifyDesc": {
+    "message": "Doğrulama, geçerli sayfanın gerçekten gördüğü saat dilimini okur ve seçiminle karşılaştırır.",
+    "description": "Verification section description"
+  },
+  "aboutText": {
+    "description": "About section text"
+  },
+  "linkSource": {
+    "message": "Kaynak kodu",
+    "description": "Source code link"
+  },
+  "btnSave": {
+    "message": "Kaydet",
+    "description": "Save button"
+  },
+  "savedTip": {
+    "message": "Kaydedildi",
+    "description": "Saved confirmation"
+  },
+  "labelVersion": {
+    "message": "Sürüm",
+    "description": "Version label"
+  },
+  "optionsTitle": {
+    "message": "Saat dilimini değiştir — Ayarlar",
+    "description": "Options page subtitle"
+  },
+  "badgeTitle": {
+    "message": "Etkin saat dilimi",
+    "description": "Floating badge title"
+  },
+  "badgeExpected": {
+    "message": "Beklenen",
+    "description": "Badge expected label"
+  },
+  "badgeOk": {
+    "message": "Etkin",
+    "description": "Badge in-effect chip"
+  },
+  "badgeNo": {
+    "message": "Etkin değil",
+    "description": "Badge not-in-effect chip"
+  },
+  "badgeClose": {
+    "message": "Kapat",
+    "description": "Badge close button"
+  },
+  "regionAfrica": {
+    "message": "Afrika",
+    "description": "Region Africa"
+  },
+  "regionAmerica": {
+    "message": "Amerika",
+    "description": "Region Americas"
+  },
+  "regionAntarctica": {
+    "message": "Antarktika",
+    "description": "Region Antarctica"
+  },
+  "regionAsia": {
+    "message": "Asya",
+    "description": "Region Asia"
+  },
+  "regionAtlantic": {
+    "message": "Atlantik",
+    "description": "Region Atlantic"
+  },
+  "regionAustralia": {
+    "message": "Avustralya ve Okyanusya",
+    "description": "Region Australia"
+  },
+  "regionEurope": {
+    "message": "Avrupa",
+    "description": "Region Europe"
+  },
+  "regionIndian": {
+    "message": "Hint Okyanusu",
+    "description": "Region Indian Ocean"
+  },
+  "regionPacific": {
+    "message": "Pasifik",
+    "description": "Region Pacific"
+  },
+  "regionEtc": {
+    "message": "GMT farkları",
+    "description": "Region Etc (fixed GMT offsets)"
+  },
+  "regionOther": {
+    "message": "Diğer",
+    "description": "Region other"
+  },
+  "labelFavorites": {
+    "message": "Favoriler",
+    "description": "Favorites label"
+  },
+  "favAdd": {
+    "message": "Ekle",
+    "description": "Add to favorites"
+  },
+  "favRemove": {
+    "message": "Kaldır",
+    "description": "Remove from favorites"
+  }
+}

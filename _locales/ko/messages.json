@@ -1,0 +1,305 @@
+{
+  "extName": {
+    "message": "시간대 변경",
+    "description": "Extension name shown in browser/extension stores"
+  },
+  "extShortName": {
+    "message": "시간대 전환",
+    "description": "Short extension name"
+  },
+  "extDescription": {
+    "message": "탭별로 브라우저 시간대를 전환합니다. 무작위 또는 지정 시간대를 선택할 수 있고 변경 효과를 즉시 확인할 수 있습니다. 무료 오픈소스.",
+    "description": "Extension description"
+  },
+  "cmdRandom": {
+    "message": "현재 탭에 무작위 시간대 적용",
+    "description": "Keyboard command description"
+  },
+  "labelMode": {
+    "message": "변경 방식",
+    "description": "Override method label"
+  },
+  "modeAuto": {
+    "message": "자동(브라우저 수준 우선)",
+    "description": "Auto mode option"
+  },
+  "modeCdp": {
+    "message": "브라우저 시간대(디버거)",
+    "description": "CDP mode option"
+  },
+  "modeScript": {
+    "message": "페이지 스크립트(Date 덮어쓰기)",
+    "description": "Page-script mode option"
+  },
+  "modeAutoHint": {
+    "message": "브라우저 수준 변경을 먼저 시도하고, 디버거를 연결할 수 없으면 페이지 스크립트 방식으로 대체합니다.",
+    "description": "Hint for auto mode"
+  },
+  "modeCdpHint": {
+    "message": "해당 탭의 시간대를 실제로 변경합니다. Chrome은 탭에 \"디버깅 중\" 배너를 표시합니다.",
+    "description": "Hint for CDP mode"
+  },
+  "modeScriptHint": {
+    "message": "페이지 내 Date/Intl을 덮어씁니다. 가볍지만 페이지 스크립트에만 영향을 줍니다.",
+    "description": "Hint for page-script mode"
+  },
+  "labelTimezone": {
+    "message": "시간대",
+    "description": "Timezone label"
+  },
+  "searchPlaceholder": {
+    "message": "시간대 검색…",
+    "description": "Search input placeholder"
+  },
+  "groupPopular": {
+    "message": "인기",
+    "description": "Popular timezone group"
+  },
+  "groupAll": {
+    "message": "모든 시간대",
+    "description": "All timezones group"
+  },
+  "optionRandom": {
+    "message": "무작위 시간대",
+    "description": "Random timezone option"
+  },
+  "optionSystem": {
+    "message": "시스템 기본값",
+    "description": "System default option"
+  },
+  "btnApply": {
+    "message": "적용",
+    "description": "Apply button"
+  },
+  "btnReset": {
+    "message": "초기화",
+    "description": "Reset button"
+  },
+  "btnVerify": {
+    "message": "검증",
+    "description": "Verify button"
+  },
+  "btnRandom": {
+    "message": "무작위",
+    "description": "Random button"
+  },
+  "btnOptions": {
+    "message": "설정",
+    "description": "Settings button"
+  },
+  "footerNote": {
+    "message": "무료 오픈소스",
+    "description": "Popup footer note"
+  },
+  "statusApplied": {
+    "message": "적용됨: $1",
+    "description": "Status when a timezone is applied ($1 = details)"
+  },
+  "statusNone": {
+    "message": "시스템 기본값",
+    "description": "Status when using system default"
+  },
+  "labelPreview": {
+    "message": "미리보기",
+    "description": "Preview label"
+  },
+  "labelObserved": {
+    "message": "실제 관측",
+    "description": "Observed value label"
+  },
+  "labelExpected": {
+    "message": "기대값",
+    "description": "Expected value label"
+  },
+  "verifyRunning": {
+    "message": "검증 중…",
+    "description": "Verification in progress"
+  },
+  "verifyPass": {
+    "message": "검증 통과—시간대 변경이 적용되었습니다",
+    "description": "Verification passed"
+  },
+  "verifyFail": {
+    "message": "미적용—실제 관측값이 기대 시간대와 다릅니다",
+    "description": "Verification failed"
+  },
+  "verifyNeedPage": {
+    "message": "일반 웹페이지(http/https)로 전환한 후 다시 시도하세요",
+    "description": "Hint when the tab cannot be inspected"
+  },
+  "verifyDetached": {
+    "message": "디버거가 분리되었습니다—다시 적용하여 시간대 변경을 복원하세요",
+    "description": "Warning when the debugger was detached"
+  },
+  "btnVerifyNow": {
+    "message": "현재 탭 검증",
+    "description": "Verify button on options page"
+  },
+  "verifyObservedName": {
+    "message": "관측된 시간대",
+    "description": "Observed timezone row"
+  },
+  "verifyObservedOffset": {
+    "message": "관측된 UTC 오프셋",
+    "description": "Observed UTC offset row"
+  },
+  "verifyObservedTime": {
+    "message": "관측된 현지 시간",
+    "description": "Observed local time row"
+  },
+  "verifyResult": {
+    "message": "결과",
+    "description": "Result row label"
+  },
+  "errDebuggerAttach": {
+    "message": "디버거를 연결할 수 없어 페이지 스크립트 모드로 전환했습니다",
+    "description": "Error when the debugger cannot be attached"
+  },
+  "errAlreadyDebugging": {
+    "message": "이 탭에는 이미 DevTools가 연결되어 있습니다—닫거나 방식을 전환하세요",
+    "description": "Error when DevTools is already attached"
+  },
+  "labelLanguage": {
+    "message": "언어",
+    "description": "Language setting label"
+  },
+  "langAuto": {
+    "message": "브라우저 언어 따르기",
+    "description": "Follow browser language option"
+  },
+  "sectionGeneral": {
+    "message": "일반",
+    "description": "General settings section"
+  },
+  "sectionBehavior": {
+    "message": "동작",
+    "description": "Behavior settings section"
+  },
+  "sectionVerify": {
+    "message": "검증",
+    "description": "Verification section"
+  },
+  "sectionAbout": {
+    "message": "정보",
+    "description": "About section"
+  },
+  "labelDefaultMode": {
+    "message": "기본 변경 방식",
+    "description": "Default method setting"
+  },
+  "labelDefaultTimezone": {
+    "message": "기본 시간대",
+    "description": "Default timezone setting"
+  },
+  "labelReloadOnApply": {
+    "message": "적용 후 탭 새로고침(페이지 스크립트 모드)",
+    "description": "Reload-after-apply setting"
+  },
+  "labelBadge": {
+    "message": "페이지에 검증 배지 플로팅 표시",
+    "description": "Floating badge setting"
+  },
+  "verifyDesc": {
+    "message": "검증은 현재 페이지가 실제로 인식하는 시간대를 읽어 선택값과 비교합니다.",
+    "description": "Verification section description"
+  },
+  "aboutText": {
+    "description": "About section text"
+  },
+  "linkSource": {
+    "message": "소스 코드",
+    "description": "Source code link"
+  },
+  "btnSave": {
+    "message": "저장",
+    "description": "Save button"
+  },
+  "savedTip": {
+    "message": "저장됨",
+    "description": "Saved confirmation"
+  },
+  "labelVersion": {
+    "message": "버전",
+    "description": "Version label"
+  },
+  "optionsTitle": {
+    "message": "시간대 변경 — 설정",
+    "description": "Options page subtitle"
+  },
+  "badgeTitle": {
+    "message": "적용된 시간대",
+    "description": "Floating badge title"
+  },
+  "badgeExpected": {
+    "message": "기대값",
+    "description": "Badge expected label"
+  },
+  "badgeOk": {
+    "message": "적용됨",
+    "description": "Badge in-effect chip"
+  },
+  "badgeNo": {
+    "message": "미적용",
+    "description": "Badge not-in-effect chip"
+  },
+  "badgeClose": {
+    "message": "닫기",
+    "description": "Badge close button"
+  },
+  "regionAfrica": {
+    "message": "아프리카",
+    "description": "Region Africa"
+  },
+  "regionAmerica": {
+    "message": "아메리카",
+    "description": "Region Americas"
+  },
+  "regionAntarctica": {
+    "message": "남극",
+    "description": "Region Antarctica"
+  },
+  "regionAsia": {
+    "message": "아시아",
+    "description": "Region Asia"
+  },
+  "regionAtlantic": {
+    "message": "대서양",
+    "description": "Region Atlantic"
+  },
+  "regionAustralia": {
+    "message": "오세아니아",
+    "description": "Region Australia"
+  },
+  "regionEurope": {
+    "message": "유럽",
+    "description": "Region Europe"
+  },
+  "regionIndian": {
+    "message": "인도양",
+    "description": "Region Indian Ocean"
+  },
+  "regionPacific": {
+    "message": "태평양",
+    "description": "Region Pacific"
+  },
+  "regionEtc": {
+    "message": "GMT 오프셋",
+    "description": "Region Etc (fixed GMT offsets)"
+  },
+  "regionOther": {
+    "message": "기타",
+    "description": "Region other"
+  },
+  "labelFavorites": {
+    "message": "즐겨찾기",
+    "description": "Favorites label"
+  },
+  "favAdd": {
+    "message": "추가",
+    "description": "Add to favorites"
+  },
+  "favRemove": {
+    "message": "제거",
+    "description": "Remove from favorites"
+  }
+}

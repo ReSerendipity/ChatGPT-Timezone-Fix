@@ -1,0 +1,305 @@
+{
+  "extName": {
+    "message": "Ubah Zona Waktu",
+    "description": "Extension name shown in browser/extension stores"
+  },
+  "extShortName": {
+    "message": "Zona Waktu",
+    "description": "Short extension name"
+  },
+  "extDescription": {
+    "message": "Ganti zona waktu browser per tab — acak atau pilihan sendiri — dengan verifikasi efek instan. Gratis dan open source.",
+    "description": "Extension description"
+  },
+  "cmdRandom": {
+    "message": "Terapkan zona waktu acak ke tab saat ini",
+    "description": "Keyboard command description"
+  },
+  "labelMode": {
+    "message": "Metode",
+    "description": "Override method label"
+  },
+  "modeAuto": {
+    "message": "Otomatis (utamakan tingkat browser)",
+    "description": "Auto mode option"
+  },
+  "modeCdp": {
+    "message": "Zona waktu browser (debugger)",
+    "description": "CDP mode option"
+  },
+  "modeScript": {
+    "message": "Skrip halaman (tulis ulang Date)",
+    "description": "Page-script mode option"
+  },
+  "modeAutoHint": {
+    "message": "Coba ubah di tingkat browser lebih dulu; jika debugger tidak bisa dipasang, beralih ke skrip halaman.",
+    "description": "Hint for auto mode"
+  },
+  "modeCdpHint": {
+    "message": "Benar-benar mengubah zona waktu tab ini. Chrome menampilkan banner \"debugging\" di tab.",
+    "description": "Hint for CDP mode"
+  },
+  "modeScriptHint": {
+    "message": "Menulis ulang Date/Intl di dalam halaman. Ringan, tapi hanya memengaruhi skrip halaman.",
+    "description": "Hint for page-script mode"
+  },
+  "labelTimezone": {
+    "message": "Zona waktu",
+    "description": "Timezone label"
+  },
+  "searchPlaceholder": {
+    "message": "Cari zona waktu…",
+    "description": "Search input placeholder"
+  },
+  "groupPopular": {
+    "message": "Populer",
+    "description": "Popular timezone group"
+  },
+  "groupAll": {
+    "message": "Semua zona waktu",
+    "description": "All timezones group"
+  },
+  "optionRandom": {
+    "message": "Zona waktu acak",
+    "description": "Random timezone option"
+  },
+  "optionSystem": {
+    "message": "Default sistem",
+    "description": "System default option"
+  },
+  "btnApply": {
+    "message": "Terapkan",
+    "description": "Apply button"
+  },
+  "btnReset": {
+    "message": "Reset",
+    "description": "Reset button"
+  },
+  "btnVerify": {
+    "message": "Verifikasi",
+    "description": "Verify button"
+  },
+  "btnRandom": {
+    "message": "Acak",
+    "description": "Random button"
+  },
+  "btnOptions": {
+    "message": "Pengaturan",
+    "description": "Settings button"
+  },
+  "footerNote": {
+    "message": "Gratis & open source",
+    "description": "Popup footer note"
+  },
+  "statusApplied": {
+    "message": "Diterapkan: $1",
+    "description": "Status when a timezone is applied ($1 = details)"
+  },
+  "statusNone": {
+    "message": "Default sistem",
+    "description": "Status when using system default"
+  },
+  "labelPreview": {
+    "message": "Pratinjau",
+    "description": "Preview label"
+  },
+  "labelObserved": {
+    "message": "Teramati",
+    "description": "Observed value label"
+  },
+  "labelExpected": {
+    "message": "Diharapkan",
+    "description": "Expected value label"
+  },
+  "verifyRunning": {
+    "message": "Memverifikasi…",
+    "description": "Verification in progress"
+  },
+  "verifyPass": {
+    "message": "Terverifikasi — perubahan sudah berlaku",
+    "description": "Verification passed"
+  },
+  "verifyFail": {
+    "message": "Belum berlaku — nilai teramati berbeda dari zona yang diharapkan",
+    "description": "Verification failed"
+  },
+  "verifyNeedPage": {
+    "message": "Beralihlah ke halaman web biasa (http/https) lalu coba lagi",
+    "description": "Hint when the tab cannot be inspected"
+  },
+  "verifyDetached": {
+    "message": "Debugger terlepas — terapkan ulang untuk memulihkan perubahan",
+    "description": "Warning when the debugger was detached"
+  },
+  "btnVerifyNow": {
+    "message": "Verifikasi tab saat ini",
+    "description": "Verify button on options page"
+  },
+  "verifyObservedName": {
+    "message": "Zona waktu teramati",
+    "description": "Observed timezone row"
+  },
+  "verifyObservedOffset": {
+    "message": "Offset UTC teramati",
+    "description": "Observed UTC offset row"
+  },
+  "verifyObservedTime": {
+    "message": "Waktu lokal teramati",
+    "description": "Observed local time row"
+  },
+  "verifyResult": {
+    "message": "Hasil",
+    "description": "Result row label"
+  },
+  "errDebuggerAttach": {
+    "message": "Tidak bisa memasang debugger; beralih ke mode skrip halaman",
+    "description": "Error when the debugger cannot be attached"
+  },
+  "errAlreadyDebugging": {
+    "message": "DevTools sudah terpasang di tab ini — tutup atau ganti metode",
+    "description": "Error when DevTools is already attached"
+  },
+  "labelLanguage": {
+    "message": "Bahasa",
+    "description": "Language setting label"
+  },
+  "langAuto": {
+    "message": "Ikuti bahasa browser",
+    "description": "Follow browser language option"
+  },
+  "sectionGeneral": {
+    "message": "Umum",
+    "description": "General settings section"
+  },
+  "sectionBehavior": {
+    "message": "Perilaku",
+    "description": "Behavior settings section"
+  },
+  "sectionVerify": {
+    "message": "Verifikasi",
+    "description": "Verification section"
+  },
+  "sectionAbout": {
+    "message": "Tentang",
+    "description": "About section"
+  },
+  "labelDefaultMode": {
+    "message": "Metode default",
+    "description": "Default method setting"
+  },
+  "labelDefaultTimezone": {
+    "message": "Zona waktu default",
+    "description": "Default timezone setting"
+  },
+  "labelReloadOnApply": {
+    "message": "Muat ulang tab setelah menerapkan (mode skrip halaman)",
+    "description": "Reload-after-apply setting"
+  },
+  "labelBadge": {
+    "message": "Tampilkan lencana verifikasi mengapung di halaman",
+    "description": "Floating badge setting"
+  },
+  "verifyDesc": {
+    "message": "Verifikasi membaca zona waktu yang benar-benar dilihat halaman saat ini dan membandingkannya dengan pilihan Anda.",
+    "description": "Verification section description"
+  },
+  "aboutText": {
+    "description": "About section text"
+  },
+  "linkSource": {
+    "message": "Kode sumber",
+    "description": "Source code link"
+  },
+  "btnSave": {
+    "message": "Simpan",
+    "description": "Save button"
+  },
+  "savedTip": {
+    "message": "Tersimpan",
+    "description": "Saved confirmation"
+  },
+  "labelVersion": {
+    "message": "Versi",
+    "description": "Version label"
+  },
+  "optionsTitle": {
+    "message": "Ubah Zona Waktu — Pengaturan",
+    "description": "Options page subtitle"
+  },
+  "badgeTitle": {
+    "message": "Zona waktu berlaku",
+    "description": "Floating badge title"
+  },
+  "badgeExpected": {
+    "message": "Diharapkan",
+    "description": "Badge expected label"
+  },
+  "badgeOk": {
+    "message": "Berlaku",
+    "description": "Badge in-effect chip"
+  },
+  "badgeNo": {
+    "message": "Belum berlaku",
+    "description": "Badge not-in-effect chip"
+  },
+  "badgeClose": {
+    "message": "Tutup",
+    "description": "Badge close button"
+  },
+  "regionAfrica": {
+    "message": "Afrika",
+    "description": "Region Africa"
+  },
+  "regionAmerica": {
+    "message": "Amerika",
+    "description": "Region Americas"
+  },
+  "regionAntarctica": {
+    "message": "Antarktika",
+    "description": "Region Antarctica"
+  },
+  "regionAsia": {
+    "message": "Asia",
+    "description": "Region Asia"
+  },
+  "regionAtlantic": {
+    "message": "Atlantik",
+    "description": "Region Atlantic"
+  },
+  "regionAustralia": {
+    "message": "Australia & Oseania",
+    "description": "Region Australia"
+  },
+  "regionEurope": {
+    "message": "Eropa",
+    "description": "Region Europe"
+  },
+  "regionIndian": {
+    "message": "Samudra Hindia",
+    "description": "Region Indian Ocean"
+  },
+  "regionPacific": {
+    "message": "Pasifik",
+    "description": "Region Pacific"
+  },
+  "regionEtc": {
+    "message": "Pergeseran GMT",
+    "description": "Region Etc (fixed GMT offsets)"
+  },
+  "regionOther": {
+    "message": "Lainnya",
+    "description": "Region other"
+  },
+  "labelFavorites": {
+    "message": "Favorit",
+    "description": "Favorites label"
+  },
+  "favAdd": {
+    "message": "Tambah",
+    "description": "Add to favorites"
+  },
+  "favRemove": {
+    "message": "Hapus",
+    "description": "Remove from favorites"
+  }
+}

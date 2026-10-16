@@ -1,0 +1,305 @@
+{
+  "extName": {
+    "message": "Changer de fuseau horaire",
+    "description": "Extension name shown in browser/extension stores"
+  },
+  "extShortName": {
+    "message": "Fuseau horaire",
+    "description": "Short extension name"
+  },
+  "extDescription": {
+    "message": "Changez le fuseau horaire du navigateur par onglet — aléatoire ou personnalisé — avec vérification instantanée de l'effet. Gratuit et open source.",
+    "description": "Extension description"
+  },
+  "cmdRandom": {
+    "message": "Appliquer un fuseau horaire aléatoire à l'onglet actuel",
+    "description": "Keyboard command description"
+  },
+  "labelMode": {
+    "message": "Méthode",
+    "description": "Override method label"
+  },
+  "modeAuto": {
+    "message": "Auto (navigateur en priorité)",
+    "description": "Auto mode option"
+  },
+  "modeCdp": {
+    "message": "Fuseau du navigateur (débogueur)",
+    "description": "CDP mode option"
+  },
+  "modeScript": {
+    "message": "Script de page (redéfinir Date)",
+    "description": "Page-script mode option"
+  },
+  "modeAutoHint": {
+    "message": "Essaie d'abord la modification au niveau du navigateur ; si le débogueur ne peut pas être attaché, utilise le script de page.",
+    "description": "Hint for auto mode"
+  },
+  "modeCdpHint": {
+    "message": "Change réellement le fuseau de cet onglet. Chrome affiche une bannière « débogage » sur l'onglet.",
+    "description": "Hint for CDP mode"
+  },
+  "modeScriptHint": {
+    "message": "Redéfinit Date/Intl dans la page. Léger, mais n'affecte que les scripts de la page.",
+    "description": "Hint for page-script mode"
+  },
+  "labelTimezone": {
+    "message": "Fuseau horaire",
+    "description": "Timezone label"
+  },
+  "searchPlaceholder": {
+    "message": "Rechercher un fuseau…",
+    "description": "Search input placeholder"
+  },
+  "groupPopular": {
+    "message": "Populaires",
+    "description": "Popular timezone group"
+  },
+  "groupAll": {
+    "message": "Tous les fuseaux",
+    "description": "All timezones group"
+  },
+  "optionRandom": {
+    "message": "Fuseau aléatoire",
+    "description": "Random timezone option"
+  },
+  "optionSystem": {
+    "message": "Valeur système",
+    "description": "System default option"
+  },
+  "btnApply": {
+    "message": "Appliquer",
+    "description": "Apply button"
+  },
+  "btnReset": {
+    "message": "Réinitialiser",
+    "description": "Reset button"
+  },
+  "btnVerify": {
+    "message": "Vérifier",
+    "description": "Verify button"
+  },
+  "btnRandom": {
+    "message": "Aléatoire",
+    "description": "Random button"
+  },
+  "btnOptions": {
+    "message": "Paramètres",
+    "description": "Settings button"
+  },
+  "footerNote": {
+    "message": "Gratuit et open source",
+    "description": "Popup footer note"
+  },
+  "statusApplied": {
+    "message": "Appliqué : $1",
+    "description": "Status when a timezone is applied ($1 = details)"
+  },
+  "statusNone": {
+    "message": "Valeur système",
+    "description": "Status when using system default"
+  },
+  "labelPreview": {
+    "message": "Aperçu",
+    "description": "Preview label"
+  },
+  "labelObserved": {
+    "message": "Observé",
+    "description": "Observed value label"
+  },
+  "labelExpected": {
+    "message": "Attendu",
+    "description": "Expected value label"
+  },
+  "verifyRunning": {
+    "message": "Vérification…",
+    "description": "Verification in progress"
+  },
+  "verifyPass": {
+    "message": "Vérifié — le changement est en vigueur",
+    "description": "Verification passed"
+  },
+  "verifyFail": {
+    "message": "Sans effet — la valeur observée diffère du fuseau attendu",
+    "description": "Verification failed"
+  },
+  "verifyNeedPage": {
+    "message": "Passez à une page web normale (http/https) et réessayez",
+    "description": "Hint when the tab cannot be inspected"
+  },
+  "verifyDetached": {
+    "message": "Le débogueur a été détaché — réappliquez pour rétablir le changement",
+    "description": "Warning when the debugger was detached"
+  },
+  "btnVerifyNow": {
+    "message": "Vérifier l'onglet actuel",
+    "description": "Verify button on options page"
+  },
+  "verifyObservedName": {
+    "message": "Fuseau observé",
+    "description": "Observed timezone row"
+  },
+  "verifyObservedOffset": {
+    "message": "Décalage UTC observé",
+    "description": "Observed UTC offset row"
+  },
+  "verifyObservedTime": {
+    "message": "Heure locale observée",
+    "description": "Observed local time row"
+  },
+  "verifyResult": {
+    "message": "Résultat",
+    "description": "Result row label"
+  },
+  "errDebuggerAttach": {
+    "message": "Impossible d'attacher le débogueur ; bascule en mode script de page",
+    "description": "Error when the debugger cannot be attached"
+  },
+  "errAlreadyDebugging": {
+    "message": "DevTools est déjà attaché à cet onglet — fermez-le ou changez de méthode",
+    "description": "Error when DevTools is already attached"
+  },
+  "labelLanguage": {
+    "message": "Langue",
+    "description": "Language setting label"
+  },
+  "langAuto": {
+    "message": "Langue du navigateur",
+    "description": "Follow browser language option"
+  },
+  "sectionGeneral": {
+    "message": "Général",
+    "description": "General settings section"
+  },
+  "sectionBehavior": {
+    "message": "Comportement",
+    "description": "Behavior settings section"
+  },
+  "sectionVerify": {
+    "message": "Vérification",
+    "description": "Verification section"
+  },
+  "sectionAbout": {
+    "message": "À propos",
+    "description": "About section"
+  },
+  "labelDefaultMode": {
+    "message": "Méthode par défaut",
+    "description": "Default method setting"
+  },
+  "labelDefaultTimezone": {
+    "message": "Fuseau par défaut",
+    "description": "Default timezone setting"
+  },
+  "labelReloadOnApply": {
+    "message": "Recharger l'onglet après application (mode script de page)",
+    "description": "Reload-after-apply setting"
+  },
+  "labelBadge": {
+    "message": "Afficher le badge flottant de vérification sur les pages",
+    "description": "Floating badge setting"
+  },
+  "verifyDesc": {
+    "message": "La vérification lit le fuseau réellement vu par la page actuelle et le compare à votre sélection.",
+    "description": "Verification section description"
+  },
+  "aboutText": {
+    "description": "About section text"
+  },
+  "linkSource": {
+    "message": "Code source",
+    "description": "Source code link"
+  },
+  "btnSave": {
+    "message": "Enregistrer",
+    "description": "Save button"
+  },
+  "savedTip": {
+    "message": "Enregistré",
+    "description": "Saved confirmation"
+  },
+  "labelVersion": {
+    "message": "Version",
+    "description": "Version label"
+  },
+  "optionsTitle": {
+    "message": "Changer de fuseau horaire — Paramètres",
+    "description": "Options page subtitle"
+  },
+  "badgeTitle": {
+    "message": "Fuseau en vigueur",
+    "description": "Floating badge title"
+  },
+  "badgeExpected": {
+    "message": "Attendu",
+    "description": "Badge expected label"
+  },
+  "badgeOk": {
+    "message": "En vigueur",
+    "description": "Badge in-effect chip"
+  },
+  "badgeNo": {
+    "message": "Sans effet",
+    "description": "Badge not-in-effect chip"
+  },
+  "badgeClose": {
+    "message": "Fermer",
+    "description": "Badge close button"
+  },
+  "regionAfrica": {
+    "message": "Afrique",
+    "description": "Region Africa"
+  },
+  "regionAmerica": {
+    "message": "Amériques",
+    "description": "Region Americas"
+  },
+  "regionAntarctica": {
+    "message": "Antarctique",
+    "description": "Region Antarctica"
+  },
+  "regionAsia": {
+    "message": "Asie",
+    "description": "Region Asia"
+  },
+  "regionAtlantic": {
+    "message": "Atlantique",
+    "description": "Region Atlantic"
+  },
+  "regionAustralia": {
+    "message": "Australie et Océanie",
+    "description": "Region Australia"
+  },
+  "regionEurope": {
+    "message": "Europe",
+    "description": "Region Europe"
+  },
+  "regionIndian": {
+    "message": "Océan Indien",
+    "description": "Region Indian Ocean"
+  },
+  "regionPacific": {
+    "message": "Pacifique",
+    "description": "Region Pacific"
+  },
+  "regionEtc": {
+    "message": "Décalages GMT",
+    "description": "Region Etc (fixed GMT offsets)"
+  },
+  "regionOther": {
+    "message": "Autres",
+    "description": "Region other"
+  },
+  "labelFavorites": {
+    "message": "Favoris",
+    "description": "Favorites label"
+  },
+  "favAdd": {
+    "message": "Ajouter",
+    "description": "Add to favorites"
+  },
+  "favRemove": {
+    "message": "Retirer",
+    "description": "Remove from favorites"
+  }
+}

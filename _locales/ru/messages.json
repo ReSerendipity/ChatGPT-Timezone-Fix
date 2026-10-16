@@ -1,0 +1,305 @@
+{
+  "extName": {
+    "message": "Смена часового пояса",
+    "description": "Extension name shown in browser/extension stores"
+  },
+  "extShortName": {
+    "message": "Часовой пояс",
+    "description": "Short extension name"
+  },
+  "extDescription": {
+    "message": "Переключайте часовой пояс браузера для каждой вкладки — случайный или заданный — с мгновенной проверкой результата. Бесплатно и с открытым кодом.",
+    "description": "Extension description"
+  },
+  "cmdRandom": {
+    "message": "Применить случайный часовой пояс к текущей вкладке",
+    "description": "Keyboard command description"
+  },
+  "labelMode": {
+    "message": "Метод",
+    "description": "Override method label"
+  },
+  "modeAuto": {
+    "message": "Авто (приоритет — уровень браузера)",
+    "description": "Auto mode option"
+  },
+  "modeCdp": {
+    "message": "Часовой пояс браузера (отладчик)",
+    "description": "CDP mode option"
+  },
+  "modeScript": {
+    "message": "Скрипт страницы (переопределение Date)",
+    "description": "Page-script mode option"
+  },
+  "modeAutoHint": {
+    "message": "Сначала пробуем изменение на уровне браузера; если отладчик недоступен — переходим на скрипт страницы.",
+    "description": "Hint for auto mode"
+  },
+  "modeCdpHint": {
+    "message": "Действительно меняет часовой пояс этой вкладки. Chrome показывает на вкладке баннер «Отладка».",
+    "description": "Hint for CDP mode"
+  },
+  "modeScriptHint": {
+    "message": "Переопределяет Date/Intl внутри страницы. Легковесно, но влияет только на скрипты страницы.",
+    "description": "Hint for page-script mode"
+  },
+  "labelTimezone": {
+    "message": "Часовой пояс",
+    "description": "Timezone label"
+  },
+  "searchPlaceholder": {
+    "message": "Поиск часового пояса…",
+    "description": "Search input placeholder"
+  },
+  "groupPopular": {
+    "message": "Популярные",
+    "description": "Popular timezone group"
+  },
+  "groupAll": {
+    "message": "Все часовые пояса",
+    "description": "All timezones group"
+  },
+  "optionRandom": {
+    "message": "Случайный часовой пояс",
+    "description": "Random timezone option"
+  },
+  "optionSystem": {
+    "message": "Системный",
+    "description": "System default option"
+  },
+  "btnApply": {
+    "message": "Применить",
+    "description": "Apply button"
+  },
+  "btnReset": {
+    "message": "Сбросить",
+    "description": "Reset button"
+  },
+  "btnVerify": {
+    "message": "Проверить",
+    "description": "Verify button"
+  },
+  "btnRandom": {
+    "message": "Случайный",
+    "description": "Random button"
+  },
+  "btnOptions": {
+    "message": "Настройки",
+    "description": "Settings button"
+  },
+  "footerNote": {
+    "message": "Бесплатно и с открытым кодом",
+    "description": "Popup footer note"
+  },
+  "statusApplied": {
+    "message": "Применён: $1",
+    "description": "Status when a timezone is applied ($1 = details)"
+  },
+  "statusNone": {
+    "message": "Системный",
+    "description": "Status when using system default"
+  },
+  "labelPreview": {
+    "message": "Предпросмотр",
+    "description": "Preview label"
+  },
+  "labelObserved": {
+    "message": "Наблюдаемое",
+    "description": "Observed value label"
+  },
+  "labelExpected": {
+    "message": "Ожидаемое",
+    "description": "Expected value label"
+  },
+  "verifyRunning": {
+    "message": "Проверяем…",
+    "description": "Verification in progress"
+  },
+  "verifyPass": {
+    "message": "Проверено — изменение действует",
+    "description": "Verification passed"
+  },
+  "verifyFail": {
+    "message": "Не действует — наблюдаемое значение отличается от ожидаемого пояса",
+    "description": "Verification failed"
+  },
+  "verifyNeedPage": {
+    "message": "Перейдите на обычную веб-страницу (http/https) и повторите",
+    "description": "Hint when the tab cannot be inspected"
+  },
+  "verifyDetached": {
+    "message": "Отладчик отключён — примените снова, чтобы восстановить изменение",
+    "description": "Warning when the debugger was detached"
+  },
+  "btnVerifyNow": {
+    "message": "Проверить текущую вкладку",
+    "description": "Verify button on options page"
+  },
+  "verifyObservedName": {
+    "message": "Наблюдаемый часовой пояс",
+    "description": "Observed timezone row"
+  },
+  "verifyObservedOffset": {
+    "message": "Наблюдаемое смещение UTC",
+    "description": "Observed UTC offset row"
+  },
+  "verifyObservedTime": {
+    "message": "Наблюдаемое местное время",
+    "description": "Observed local time row"
+  },
+  "verifyResult": {
+    "message": "Результат",
+    "description": "Result row label"
+  },
+  "errDebuggerAttach": {
+    "message": "Не удалось подключить отладчик; переключено на режим скрипта страницы",
+    "description": "Error when the debugger cannot be attached"
+  },
+  "errAlreadyDebugging": {
+    "message": "К этой вкладке уже подключён DevTools — закройте его или смените метод",
+    "description": "Error when DevTools is already attached"
+  },
+  "labelLanguage": {
+    "message": "Язык",
+    "description": "Language setting label"
+  },
+  "langAuto": {
+    "message": "Как в браузере",
+    "description": "Follow browser language option"
+  },
+  "sectionGeneral": {
+    "message": "Общие",
+    "description": "General settings section"
+  },
+  "sectionBehavior": {
+    "message": "Поведение",
+    "description": "Behavior settings section"
+  },
+  "sectionVerify": {
+    "message": "Проверка",
+    "description": "Verification section"
+  },
+  "sectionAbout": {
+    "message": "О расширении",
+    "description": "About section"
+  },
+  "labelDefaultMode": {
+    "message": "Метод по умолчанию",
+    "description": "Default method setting"
+  },
+  "labelDefaultTimezone": {
+    "message": "Часовой пояс по умолчанию",
+    "description": "Default timezone setting"
+  },
+  "labelReloadOnApply": {
+    "message": "Перезагружать вкладку после применения (режим скрипта страницы)",
+    "description": "Reload-after-apply setting"
+  },
+  "labelBadge": {
+    "message": "Показывать плавающий значок проверки на страницах",
+    "description": "Floating badge setting"
+  },
+  "verifyDesc": {
+    "message": "Проверка считывает часовой пояс, который реально видит текущая страница, и сравнивает его с вашим выбором.",
+    "description": "Verification section description"
+  },
+  "aboutText": {
+    "description": "About section text"
+  },
+  "linkSource": {
+    "message": "Исходный код",
+    "description": "Source code link"
+  },
+  "btnSave": {
+    "message": "Сохранить",
+    "description": "Save button"
+  },
+  "savedTip": {
+    "message": "Сохранено",
+    "description": "Saved confirmation"
+  },
+  "labelVersion": {
+    "message": "Версия",
+    "description": "Version label"
+  },
+  "optionsTitle": {
+    "message": "Смена часового пояса — Настройки",
+    "description": "Options page subtitle"
+  },
+  "badgeTitle": {
+    "message": "Действующий часовой пояс",
+    "description": "Floating badge title"
+  },
+  "badgeExpected": {
+    "message": "Ожидаемый",
+    "description": "Badge expected label"
+  },
+  "badgeOk": {
+    "message": "Действует",
+    "description": "Badge in-effect chip"
+  },
+  "badgeNo": {
+    "message": "Не действует",
+    "description": "Badge not-in-effect chip"
+  },
+  "badgeClose": {
+    "message": "Закрыть",
+    "description": "Badge close button"
+  },
+  "regionAfrica": {
+    "message": "Африка",
+    "description": "Region Africa"
+  },
+  "regionAmerica": {
+    "message": "Америка",
+    "description": "Region Americas"
+  },
+  "regionAntarctica": {
+    "message": "Антарктида",
+    "description": "Region Antarctica"
+  },
+  "regionAsia": {
+    "message": "Азия",
+    "description": "Region Asia"
+  },
+  "regionAtlantic": {
+    "message": "Атлантика",
+    "description": "Region Atlantic"
+  },
+  "regionAustralia": {
+    "message": "Австралия и Океания",
+    "description": "Region Australia"
+  },
+  "regionEurope": {
+    "message": "Европа",
+    "description": "Region Europe"
+  },
+  "regionIndian": {
+    "message": "Индийский океан",
+    "description": "Region Indian Ocean"
+  },
+  "regionPacific": {
+    "message": "Тихий океан",
+    "description": "Region Pacific"
+  },
+  "regionEtc": {
+    "message": "Смещения GMT",
+    "description": "Region Etc (fixed GMT offsets)"
+  },
+  "regionOther": {
+    "message": "Прочее",
+    "description": "Region other"
+  },
+  "labelFavorites": {
+    "message": "Избранное",
+    "description": "Favorites label"
+  },
+  "favAdd": {
+    "message": "Добавить",
+    "description": "Add to favorites"
+  },
+  "favRemove": {
+    "message": "Убрать",
+    "description": "Remove from favorites"
+  }
+}

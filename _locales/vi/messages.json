@@ -1,0 +1,305 @@
+{
+  "extName": {
+    "message": "Thay đổi múi giờ",
+    "description": "Extension name shown in browser/extension stores"
+  },
+  "extShortName": {
+    "message": "Múi giờ",
+    "description": "Short extension name"
+  },
+  "extDescription": {
+    "message": "Đổi múi giờ của trình duyệt theo từng tab — ngẫu nhiên hoặc tự chọn — với xác minh hiệu lực tức thì. Miễn phí và mã nguồn mở.",
+    "description": "Extension description"
+  },
+  "cmdRandom": {
+    "message": "Áp dụng múi giờ ngẫu nhiên cho tab hiện tại",
+    "description": "Keyboard command description"
+  },
+  "labelMode": {
+    "message": "Phương thức",
+    "description": "Override method label"
+  },
+  "modeAuto": {
+    "message": "Tự động (ưu tiên cấp trình duyệt)",
+    "description": "Auto mode option"
+  },
+  "modeCdp": {
+    "message": "Múi giờ trình duyệt (trình gỡ lỗi)",
+    "description": "CDP mode option"
+  },
+  "modeScript": {
+    "message": "Script trang (ghi đè Date)",
+    "description": "Page-script mode option"
+  },
+  "modeAutoHint": {
+    "message": "Thử thay đổi ở cấp trình duyệt trước; nếu không gắn được trình gỡ lỗi thì chuyển sang script trang.",
+    "description": "Hint for auto mode"
+  },
+  "modeCdpHint": {
+    "message": "Thực sự thay đổi múi giờ của tab này. Chrome hiển thị biểu ngữ \"đang gỡ lỗi\" trên tab.",
+    "description": "Hint for CDP mode"
+  },
+  "modeScriptHint": {
+    "message": "Ghi đè Date/Intl bên trong trang. Nhẹ, nhưng chỉ ảnh hưởng script của trang.",
+    "description": "Hint for page-script mode"
+  },
+  "labelTimezone": {
+    "message": "Múi giờ",
+    "description": "Timezone label"
+  },
+  "searchPlaceholder": {
+    "message": "Tìm múi giờ…",
+    "description": "Search input placeholder"
+  },
+  "groupPopular": {
+    "message": "Phổ biến",
+    "description": "Popular timezone group"
+  },
+  "groupAll": {
+    "message": "Tất cả múi giờ",
+    "description": "All timezones group"
+  },
+  "optionRandom": {
+    "message": "Múi giờ ngẫu nhiên",
+    "description": "Random timezone option"
+  },
+  "optionSystem": {
+    "message": "Mặc định hệ thống",
+    "description": "System default option"
+  },
+  "btnApply": {
+    "message": "Áp dụng",
+    "description": "Apply button"
+  },
+  "btnReset": {
+    "message": "Đặt lại",
+    "description": "Reset button"
+  },
+  "btnVerify": {
+    "message": "Xác minh",
+    "description": "Verify button"
+  },
+  "btnRandom": {
+    "message": "Ngẫu nhiên",
+    "description": "Random button"
+  },
+  "btnOptions": {
+    "message": "Cài đặt",
+    "description": "Settings button"
+  },
+  "footerNote": {
+    "message": "Miễn phí & mã nguồn mở",
+    "description": "Popup footer note"
+  },
+  "statusApplied": {
+    "message": "Đã áp dụng: $1",
+    "description": "Status when a timezone is applied ($1 = details)"
+  },
+  "statusNone": {
+    "message": "Mặc định hệ thống",
+    "description": "Status when using system default"
+  },
+  "labelPreview": {
+    "message": "Xem trước",
+    "description": "Preview label"
+  },
+  "labelObserved": {
+    "message": "Quan sát được",
+    "description": "Observed value label"
+  },
+  "labelExpected": {
+    "message": "Kỳ vọng",
+    "description": "Expected value label"
+  },
+  "verifyRunning": {
+    "message": "Đang xác minh…",
+    "description": "Verification in progress"
+  },
+  "verifyPass": {
+    "message": "Đã xác minh — thay đổi có hiệu lực",
+    "description": "Verification passed"
+  },
+  "verifyFail": {
+    "message": "Chưa có hiệu lực — giá trị quan sát khác múi giờ kỳ vọng",
+    "description": "Verification failed"
+  },
+  "verifyNeedPage": {
+    "message": "Hãy chuyển sang trang web thường (http/https) rồi thử lại",
+    "description": "Hint when the tab cannot be inspected"
+  },
+  "verifyDetached": {
+    "message": "Trình gỡ lỗi đã ngắt kết nối — hãy áp dụng lại để khôi phục",
+    "description": "Warning when the debugger was detached"
+  },
+  "btnVerifyNow": {
+    "message": "Xác minh tab hiện tại",
+    "description": "Verify button on options page"
+  },
+  "verifyObservedName": {
+    "message": "Múi giờ quan sát được",
+    "description": "Observed timezone row"
+  },
+  "verifyObservedOffset": {
+    "message": "Offset UTC quan sát được",
+    "description": "Observed UTC offset row"
+  },
+  "verifyObservedTime": {
+    "message": "Giờ địa phương quan sát được",
+    "description": "Observed local time row"
+  },
+  "verifyResult": {
+    "message": "Kết quả",
+    "description": "Result row label"
+  },
+  "errDebuggerAttach": {
+    "message": "Không gắn được trình gỡ lỗi; đã chuyển sang chế độ script trang",
+    "description": "Error when the debugger cannot be attached"
+  },
+  "errAlreadyDebugging": {
+    "message": "Tab này đã gắn DevTools — hãy đóng hoặc đổi phương thức",
+    "description": "Error when DevTools is already attached"
+  },
+  "labelLanguage": {
+    "message": "Ngôn ngữ",
+    "description": "Language setting label"
+  },
+  "langAuto": {
+    "message": "Theo ngôn ngữ trình duyệt",
+    "description": "Follow browser language option"
+  },
+  "sectionGeneral": {
+    "message": "Chung",
+    "description": "General settings section"
+  },
+  "sectionBehavior": {
+    "message": "Hành vi",
+    "description": "Behavior settings section"
+  },
+  "sectionVerify": {
+    "message": "Xác minh",
+    "description": "Verification section"
+  },
+  "sectionAbout": {
+    "message": "Giới thiệu",
+    "description": "About section"
+  },
+  "labelDefaultMode": {
+    "message": "Phương thức mặc định",
+    "description": "Default method setting"
+  },
+  "labelDefaultTimezone": {
+    "message": "Múi giờ mặc định",
+    "description": "Default timezone setting"
+  },
+  "labelReloadOnApply": {
+    "message": "Tải lại tab sau khi áp dụng (chế độ script trang)",
+    "description": "Reload-after-apply setting"
+  },
+  "labelBadge": {
+    "message": "Hiện huy hiệu xác minh nổi trên trang",
+    "description": "Floating badge setting"
+  },
+  "verifyDesc": {
+    "message": "Xác minh sẽ đọc múi giờ mà trang hiện tại thực sự nhìn thấy và so sánh với lựa chọn của bạn.",
+    "description": "Verification section description"
+  },
+  "aboutText": {
+    "description": "About section text"
+  },
+  "linkSource": {
+    "message": "Mã nguồn",
+    "description": "Source code link"
+  },
+  "btnSave": {
+    "message": "Lưu",
+    "description": "Save button"
+  },
+  "savedTip": {
+    "message": "Đã lưu",
+    "description": "Saved confirmation"
+  },
+  "labelVersion": {
+    "message": "Phiên bản",
+    "description": "Version label"
+  },
+  "optionsTitle": {
+    "message": "Thay đổi múi giờ — Cài đặt",
+    "description": "Options page subtitle"
+  },
+  "badgeTitle": {
+    "message": "Múi giờ đang có hiệu lực",
+    "description": "Floating badge title"
+  },
+  "badgeExpected": {
+    "message": "Kỳ vọng",
+    "description": "Badge expected label"
+  },
+  "badgeOk": {
+    "message": "Có hiệu lực",
+    "description": "Badge in-effect chip"
+  },
+  "badgeNo": {
+    "message": "Chưa có hiệu lực",
+    "description": "Badge not-in-effect chip"
+  },
+  "badgeClose": {
+    "message": "Đóng",
+    "description": "Badge close button"
+  },
+  "regionAfrica": {
+    "message": "Châu Phi",
+    "description": "Region Africa"
+  },
+  "regionAmerica": {
+    "message": "Châu Mỹ",
+    "description": "Region Americas"
+  },
+  "regionAntarctica": {
+    "message": "Châu Nam Cực",
+    "description": "Region Antarctica"
+  },
+  "regionAsia": {
+    "message": "Châu Á",
+    "description": "Region Asia"
+  },
+  "regionAtlantic": {
+    "message": "Đại Tây Dương",
+    "description": "Region Atlantic"
+  },
+  "regionAustralia": {
+    "message": "Châu Úc & Châu Đại Dương",
+    "description": "Region Australia"
+  },
+  "regionEurope": {
+    "message": "Châu Âu",
+    "description": "Region Europe"
+  },
+  "regionIndian": {
+    "message": "Ấn Độ Dương",
+    "description": "Region Indian Ocean"
+  },
+  "regionPacific": {
+    "message": "Thái Bình Dương",
+    "description": "Region Pacific"
+  },
+  "regionEtc": {
+    "message": "Độ lệch GMT",
+    "description": "Region Etc (fixed GMT offsets)"
+  },
+  "regionOther": {
+    "message": "Khác",
+    "description": "Region other"
+  },
+  "labelFavorites": {
+    "message": "Yêu thích",
+    "description": "Favorites label"
+  },
+  "favAdd": {
+    "message": "Thêm",
+    "description": "Add to favorites"
+  },
+  "favRemove": {
+    "message": "Bỏ",
+    "description": "Remove from favorites"
+  }
+}

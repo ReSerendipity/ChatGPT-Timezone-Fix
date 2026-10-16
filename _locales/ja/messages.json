@@ -1,0 +1,305 @@
+{
+  "extName": {
+    "message": "タイムゾーンを変更",
+    "description": "Extension name shown in browser/extension stores"
+  },
+  "extShortName": {
+    "message": "TZ切り替え",
+    "description": "Short extension name"
+  },
+  "extDescription": {
+    "message": "タブごとにブラウザのタイムゾーンを切り替え。ランダムまたは指定したタイムゾーンに変更でき、効果を即座に検証できます。無料・オープンソース。",
+    "description": "Extension description"
+  },
+  "cmdRandom": {
+    "message": "現在のタブにランダムなタイムゾーンを適用",
+    "description": "Keyboard command description"
+  },
+  "labelMode": {
+    "message": "変更方式",
+    "description": "Override method label"
+  },
+  "modeAuto": {
+    "message": "自動（ブラウザレベル優先）",
+    "description": "Auto mode option"
+  },
+  "modeCdp": {
+    "message": "ブラウザのタイムゾーン（デバッガ）",
+    "description": "CDP mode option"
+  },
+  "modeScript": {
+    "message": "ページスクリプト（Date 上書き）",
+    "description": "Page-script mode option"
+  },
+  "modeAutoHint": {
+    "message": "まずブラウザレベルの変更を試み、デバッガを接続できない場合はページスクリプト方式にフォールバックします。",
+    "description": "Hint for auto mode"
+  },
+  "modeCdpHint": {
+    "message": "そのタブのタイムゾーンを実際に変更します。Chrome はタブに「デバッグ中」バナーを表示します。",
+    "description": "Hint for CDP mode"
+  },
+  "modeScriptHint": {
+    "message": "ページ内の Date/Intl を上書きします。軽量ですが、ページスクリプトにのみ影響します。",
+    "description": "Hint for page-script mode"
+  },
+  "labelTimezone": {
+    "message": "タイムゾーン",
+    "description": "Timezone label"
+  },
+  "searchPlaceholder": {
+    "message": "タイムゾーンを検索…",
+    "description": "Search input placeholder"
+  },
+  "groupPopular": {
+    "message": "人気",
+    "description": "Popular timezone group"
+  },
+  "groupAll": {
+    "message": "すべてのタイムゾーン",
+    "description": "All timezones group"
+  },
+  "optionRandom": {
+    "message": "ランダムなタイムゾーン",
+    "description": "Random timezone option"
+  },
+  "optionSystem": {
+    "message": "システム既定",
+    "description": "System default option"
+  },
+  "btnApply": {
+    "message": "適用",
+    "description": "Apply button"
+  },
+  "btnReset": {
+    "message": "リセット",
+    "description": "Reset button"
+  },
+  "btnVerify": {
+    "message": "検証",
+    "description": "Verify button"
+  },
+  "btnRandom": {
+    "message": "ランダム",
+    "description": "Random button"
+  },
+  "btnOptions": {
+    "message": "設定",
+    "description": "Settings button"
+  },
+  "footerNote": {
+    "message": "無料・オープンソース",
+    "description": "Popup footer note"
+  },
+  "statusApplied": {
+    "message": "適用済み：$1",
+    "description": "Status when a timezone is applied ($1 = details)"
+  },
+  "statusNone": {
+    "message": "システム既定",
+    "description": "Status when using system default"
+  },
+  "labelPreview": {
+    "message": "プレビュー",
+    "description": "Preview label"
+  },
+  "labelObserved": {
+    "message": "実測値",
+    "description": "Observed value label"
+  },
+  "labelExpected": {
+    "message": "期待値",
+    "description": "Expected value label"
+  },
+  "verifyRunning": {
+    "message": "検証中…",
+    "description": "Verification in progress"
+  },
+  "verifyPass": {
+    "message": "検証成功——変更が有効です",
+    "description": "Verification passed"
+  },
+  "verifyFail": {
+    "message": "無効——実測値が期待するタイムゾーンと異なります",
+    "description": "Verification failed"
+  },
+  "verifyNeedPage": {
+    "message": "通常のウェブページ（http/https）に切り替えて再試行してください",
+    "description": "Hint when the tab cannot be inspected"
+  },
+  "verifyDetached": {
+    "message": "デバッガが切断されました——再度適用して変更を復元してください",
+    "description": "Warning when the debugger was detached"
+  },
+  "btnVerifyNow": {
+    "message": "現在のタブを検証",
+    "description": "Verify button on options page"
+  },
+  "verifyObservedName": {
+    "message": "実測タイムゾーン",
+    "description": "Observed timezone row"
+  },
+  "verifyObservedOffset": {
+    "message": "実測 UTC オフセット",
+    "description": "Observed UTC offset row"
+  },
+  "verifyObservedTime": {
+    "message": "実測ローカル時刻",
+    "description": "Observed local time row"
+  },
+  "verifyResult": {
+    "message": "結果",
+    "description": "Result row label"
+  },
+  "errDebuggerAttach": {
+    "message": "デバッガを接続できません。ページスクリプト方式に切り替えました",
+    "description": "Error when the debugger cannot be attached"
+  },
+  "errAlreadyDebugging": {
+    "message": "このタブには既に DevTools が接続されています——閉じるか方式を切り替えてください",
+    "description": "Error when DevTools is already attached"
+  },
+  "labelLanguage": {
+    "message": "言語",
+    "description": "Language setting label"
+  },
+  "langAuto": {
+    "message": "ブラウザの言語に従う",
+    "description": "Follow browser language option"
+  },
+  "sectionGeneral": {
+    "message": "一般",
+    "description": "General settings section"
+  },
+  "sectionBehavior": {
+    "message": "動作",
+    "description": "Behavior settings section"
+  },
+  "sectionVerify": {
+    "message": "検証",
+    "description": "Verification section"
+  },
+  "sectionAbout": {
+    "message": "この拡張機能について",
+    "description": "About section"
+  },
+  "labelDefaultMode": {
+    "message": "既定の変更方式",
+    "description": "Default method setting"
+  },
+  "labelDefaultTimezone": {
+    "message": "既定のタイムゾーン",
+    "description": "Default timezone setting"
+  },
+  "labelReloadOnApply": {
+    "message": "適用後にタブを再読み込み（ページスクリプト方式）",
+    "description": "Reload-after-apply setting"
+  },
+  "labelBadge": {
+    "message": "ページに検証バッジを浮動表示する",
+    "description": "Floating badge setting"
+  },
+  "verifyDesc": {
+    "message": "検証では、現在のページが実際に認識しているタイムゾーンを読み取り、選択値と比較します。",
+    "description": "Verification section description"
+  },
+  "aboutText": {
+    "description": "About section text"
+  },
+  "linkSource": {
+    "message": "ソースコード",
+    "description": "Source code link"
+  },
+  "btnSave": {
+    "message": "保存",
+    "description": "Save button"
+  },
+  "savedTip": {
+    "message": "保存しました",
+    "description": "Saved confirmation"
+  },
+  "labelVersion": {
+    "message": "バージョン",
+    "description": "Version label"
+  },
+  "optionsTitle": {
+    "message": "タイムゾーンを変更 —— 設定",
+    "description": "Options page subtitle"
+  },
+  "badgeTitle": {
+    "message": "有効なタイムゾーン",
+    "description": "Floating badge title"
+  },
+  "badgeExpected": {
+    "message": "期待値",
+    "description": "Badge expected label"
+  },
+  "badgeOk": {
+    "message": "有効",
+    "description": "Badge in-effect chip"
+  },
+  "badgeNo": {
+    "message": "無効",
+    "description": "Badge not-in-effect chip"
+  },
+  "badgeClose": {
+    "message": "閉じる",
+    "description": "Badge close button"
+  },
+  "regionAfrica": {
+    "message": "アフリカ",
+    "description": "Region Africa"
+  },
+  "regionAmerica": {
+    "message": "アメリカ",
+    "description": "Region Americas"
+  },
+  "regionAntarctica": {
+    "message": "南極",
+    "description": "Region Antarctica"
+  },
+  "regionAsia": {
+    "message": "アジア",
+    "description": "Region Asia"
+  },
+  "regionAtlantic": {
+    "message": "大西洋",
+    "description": "Region Atlantic"
+  },
+  "regionAustralia": {
+    "message": "オセアニア",
+    "description": "Region Australia"
+  },
+  "regionEurope": {
+    "message": "ヨーロッパ",
+    "description": "Region Europe"
+  },
+  "regionIndian": {
+    "message": "インド洋",
+    "description": "Region Indian Ocean"
+  },
+  "regionPacific": {
+    "message": "太平洋",
+    "description": "Region Pacific"
+  },
+  "regionEtc": {
+    "message": "GMTオフセット",
+    "description": "Region Etc (fixed GMT offsets)"
+  },
+  "regionOther": {
+    "message": "その他",
+    "description": "Region other"
+  },
+  "labelFavorites": {
+    "message": "お気に入り",
+    "description": "Favorites label"
+  },
+  "favAdd": {
+    "message": "追加",
+    "description": "Add to favorites"
+  },
+  "favRemove": {
+    "message": "削除",
+    "description": "Remove from favorites"
+  }
+}

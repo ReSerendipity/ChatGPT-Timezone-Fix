@@ -1,0 +1,305 @@
+{
+  "extName": {
+    "message": "Change Timezone",
+    "description": "Extension name shown in browser/extension stores"
+  },
+  "extShortName": {
+    "message": "TZ Changer",
+    "description": "Short extension name"
+  },
+  "extDescription": {
+    "message": "Per-tab browser timezone switcher with instant effect verification. Free and open source.",
+    "description": "Extension description"
+  },
+  "cmdRandom": {
+    "message": "Apply a random timezone to the current tab",
+    "description": "Keyboard command description"
+  },
+  "labelMode": {
+    "message": "Method",
+    "description": "Override method label"
+  },
+  "modeAuto": {
+    "message": "Auto (prefer browser-level)",
+    "description": "Auto mode option"
+  },
+  "modeCdp": {
+    "message": "Browser timezone (debugger)",
+    "description": "CDP mode option"
+  },
+  "modeScript": {
+    "message": "Page script (Date override)",
+    "description": "Page-script mode option"
+  },
+  "modeAutoHint": {
+    "message": "Uses the browser-level override first; falls back to the page script if the debugger cannot be attached.",
+    "description": "Hint for auto mode"
+  },
+  "modeCdpHint": {
+    "message": "Really changes this tab's timezone. Chrome shows a \"debugging\" banner on the tab.",
+    "description": "Hint for CDP mode"
+  },
+  "modeScriptHint": {
+    "message": "Overrides Date/Intl inside the page. Lightweight, but only affects page scripts.",
+    "description": "Hint for page-script mode"
+  },
+  "labelTimezone": {
+    "message": "Time zone",
+    "description": "Timezone label"
+  },
+  "searchPlaceholder": {
+    "message": "Search time zone…",
+    "description": "Search input placeholder"
+  },
+  "groupPopular": {
+    "message": "Popular",
+    "description": "Popular timezone group"
+  },
+  "groupAll": {
+    "message": "All time zones",
+    "description": "All timezones group"
+  },
+  "optionRandom": {
+    "message": "Random time zone",
+    "description": "Random timezone option"
+  },
+  "optionSystem": {
+    "message": "System default",
+    "description": "System default option"
+  },
+  "btnApply": {
+    "message": "Apply",
+    "description": "Apply button"
+  },
+  "btnReset": {
+    "message": "Reset",
+    "description": "Reset button"
+  },
+  "btnVerify": {
+    "message": "Verify",
+    "description": "Verify button"
+  },
+  "btnRandom": {
+    "message": "Random",
+    "description": "Random button"
+  },
+  "btnOptions": {
+    "message": "Settings",
+    "description": "Settings button"
+  },
+  "footerNote": {
+    "message": "Free & open source",
+    "description": "Popup footer note"
+  },
+  "statusApplied": {
+    "message": "Applied: $1",
+    "description": "Status when a timezone is applied ($1 = details)"
+  },
+  "statusNone": {
+    "message": "System default",
+    "description": "Status when using system default"
+  },
+  "labelPreview": {
+    "message": "Preview",
+    "description": "Preview label"
+  },
+  "labelObserved": {
+    "message": "Observed",
+    "description": "Observed value label"
+  },
+  "labelExpected": {
+    "message": "Expected",
+    "description": "Expected value label"
+  },
+  "verifyRunning": {
+    "message": "Verifying…",
+    "description": "Verification in progress"
+  },
+  "verifyPass": {
+    "message": "Verified — the override is in effect",
+    "description": "Verification passed"
+  },
+  "verifyFail": {
+    "message": "Not in effect — observed value differs from the expected time zone",
+    "description": "Verification failed"
+  },
+  "verifyNeedPage": {
+    "message": "Please switch to a normal web page (http/https) and try again",
+    "description": "Hint when the tab cannot be inspected"
+  },
+  "verifyDetached": {
+    "message": "The debugger was detached — re-apply to restore the override",
+    "description": "Warning when the debugger was detached"
+  },
+  "btnVerifyNow": {
+    "message": "Verify current tab",
+    "description": "Verify button on options page"
+  },
+  "verifyObservedName": {
+    "message": "Observed time zone",
+    "description": "Observed timezone row"
+  },
+  "verifyObservedOffset": {
+    "message": "Observed UTC offset",
+    "description": "Observed UTC offset row"
+  },
+  "verifyObservedTime": {
+    "message": "Observed local time",
+    "description": "Observed local time row"
+  },
+  "verifyResult": {
+    "message": "Result",
+    "description": "Result row label"
+  },
+  "errDebuggerAttach": {
+    "message": "Could not attach the debugger; switched to page-script mode",
+    "description": "Error when the debugger cannot be attached"
+  },
+  "errAlreadyDebugging": {
+    "message": "DevTools is already attached to this tab — close it or switch the method",
+    "description": "Error when DevTools is already attached"
+  },
+  "labelLanguage": {
+    "message": "Language",
+    "description": "Language setting label"
+  },
+  "langAuto": {
+    "message": "Follow browser language",
+    "description": "Follow browser language option"
+  },
+  "sectionGeneral": {
+    "message": "General",
+    "description": "General settings section"
+  },
+  "sectionBehavior": {
+    "message": "Behavior",
+    "description": "Behavior settings section"
+  },
+  "sectionVerify": {
+    "message": "Verification",
+    "description": "Verification section"
+  },
+  "sectionAbout": {
+    "message": "About",
+    "description": "About section"
+  },
+  "labelDefaultMode": {
+    "message": "Default method",
+    "description": "Default method setting"
+  },
+  "labelDefaultTimezone": {
+    "message": "Default time zone",
+    "description": "Default timezone setting"
+  },
+  "labelReloadOnApply": {
+    "message": "Reload the tab after applying (page-script mode)",
+    "description": "Reload-after-apply setting"
+  },
+  "labelBadge": {
+    "message": "Show floating verification badge on pages",
+    "description": "Floating badge setting"
+  },
+  "verifyDesc": {
+    "message": "Verification reads the time zone the current page actually sees and compares it with your selection.",
+    "description": "Verification section description"
+  },
+  "aboutText": {
+    "description": "About section text"
+  },
+  "linkSource": {
+    "message": "Source code",
+    "description": "Source code link"
+  },
+  "btnSave": {
+    "message": "Save",
+    "description": "Save button"
+  },
+  "savedTip": {
+    "message": "Saved",
+    "description": "Saved confirmation"
+  },
+  "labelVersion": {
+    "message": "Version",
+    "description": "Version label"
+  },
+  "optionsTitle": {
+    "message": "Change Timezone — Settings",
+    "description": "Options page subtitle"
+  },
+  "badgeTitle": {
+    "message": "Time zone in effect",
+    "description": "Floating badge title"
+  },
+  "badgeExpected": {
+    "message": "Expected",
+    "description": "Badge expected label"
+  },
+  "badgeOk": {
+    "message": "In effect",
+    "description": "Badge in-effect chip"
+  },
+  "badgeNo": {
+    "message": "Not in effect",
+    "description": "Badge not-in-effect chip"
+  },
+  "badgeClose": {
+    "message": "Close",
+    "description": "Badge close button"
+  },
+  "regionAfrica": {
+    "message": "Africa",
+    "description": "Region Africa"
+  },
+  "regionAmerica": {
+    "message": "Americas",
+    "description": "Region Americas"
+  },
+  "regionAntarctica": {
+    "message": "Antarctica",
+    "description": "Region Antarctica"
+  },
+  "regionAsia": {
+    "message": "Asia",
+    "description": "Region Asia"
+  },
+  "regionAtlantic": {
+    "message": "Atlantic Ocean",
+    "description": "Region Atlantic"
+  },
+  "regionAustralia": {
+    "message": "Australia & Oceania",
+    "description": "Region Australia"
+  },
+  "regionEurope": {
+    "message": "Europe",
+    "description": "Region Europe"
+  },
+  "regionIndian": {
+    "message": "Indian Ocean",
+    "description": "Region Indian Ocean"
+  },
+  "regionPacific": {
+    "message": "Pacific",
+    "description": "Region Pacific"
+  },
+  "regionEtc": {
+    "message": "GMT offsets",
+    "description": "Region Etc (fixed GMT offsets)"
+  },
+  "regionOther": {
+    "message": "Other",
+    "description": "Region other"
+  },
+  "labelFavorites": {
+    "message": "Favorites",
+    "description": "Favorites label"
+  },
+  "favAdd": {
+    "message": "Add",
+    "description": "Add to favorites"
+  },
+  "favRemove": {
+    "message": "Remove",
+    "description": "Remove from favorites"
+  }
+}
