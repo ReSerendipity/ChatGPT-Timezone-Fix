@@ -4,6 +4,7 @@
 
 **Why this exists:** services like ChatGPT detect the browser's time zone and block sign-ups or usage from regions they don't support — switching the tab's time zone is the common workaround. This extension makes that a one-click, per-tab operation, and verifies the override actually took effect.
 
+This is an independent, open-source implementation. Not affiliated with OpenAI, Microsoft or any other company.
 
 ## Features
 
@@ -146,6 +147,7 @@ chatgpt-timezone-fix/
 
 **为什么做这个扩展**：ChatGPT 等服务会检测浏览器时区，对不在支持范围内的区域拒绝注册或使用——切换标签页时区是常见的绕过方式。本扩展把这件事做成一键、按标签页完成，并自带「是否真的生效」的验证。
 
+本项目为独立开源实现，与 OpenAI、Microsoft 及任何其他公司均无隶属关系。
 
 ## 功能特性
 

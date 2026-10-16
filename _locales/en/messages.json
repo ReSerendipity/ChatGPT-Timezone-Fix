@@ -204,6 +204,7 @@
     "description": "Verification section description"
   },
   "aboutText": {
+    "message": "Change Timezone is free and open source, and is not affiliated with any third-party company or service.",
     "description": "About section text"
   },
   "linkSource": {

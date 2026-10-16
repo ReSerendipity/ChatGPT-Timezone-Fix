@@ -204,6 +204,7 @@
     "description": "Verification section description"
   },
   "aboutText": {
+    "message": "Change Timezone 免费且开源，与任何第三方公司或服务均无隶属关系。",
     "description": "About section text"
   },
   "linkSource": {

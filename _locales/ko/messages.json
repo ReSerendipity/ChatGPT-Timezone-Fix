@@ -204,6 +204,7 @@
     "description": "Verification section description"
   },
   "aboutText": {
+    "message": "Change Timezone은 무료 오픈소스이며 어떤 제3자 회사 또는 서비스와도 관련이 없습니다.",
     "description": "About section text"
   },
   "linkSource": {
