@@ -154,11 +154,10 @@ function applyTimezone(tabId, timezone, modeOverride) {
     var warning = null;
     if (requested !== 'script') {
       return cdpApply(tabId, timezone).then(function () {
-        effective = 'cdp';
+        return { effective: 'cdp', warning: null };
       }, function (e) {
         if (requested === 'cdp') throw e;
-        warning = 'errDebuggerAttach';
-        effective = 'script';
+        return { effective: 'script', warning: 'errDebuggerAttach' };
       });
     }
     return { effective: effective, warning: warning };
