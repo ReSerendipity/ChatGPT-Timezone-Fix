@@ -111,13 +111,27 @@ function setBadge(tabId, tabState) {
 
 function cdpApply(tabId, timezone) {
   var target = { tabId: tabId };
-  return chrome.debugger.attach(target, '1.3').catch(function (e) {
-    var msg = String(e && e.message || e).toLowerCase();
-    if (msg.indexOf('already attached') === -1) throw e;
-  }).then(function () {
+  var attached = false;
+  return chrome.debugger.attach(target, '1.3').then(function () {
+    attached = true;
     return chrome.debugger.sendCommand(target, 'Emulation.setTimezoneOverride', {
       timezoneId: timezone,
     });
+  }).catch(function (e) {
+    var msg = String(e && e.message || e).toLowerCase();
+    if (msg.indexOf('already attached') !== -1) {
+      // 其他调试器（如 DevTools）已附加：仍尝试直接发送命令，失败则上交
+      return chrome.debugger.sendCommand(target, 'Emulation.setTimezoneOverride', {
+        timezoneId: timezone,
+      });
+    }
+    if (attached) {
+      // 我们自己附加成功、但覆盖命令失败：先分离，避免留下孤儿调试器（横幅不消失）
+      return chrome.debugger.detach(target).catch(function () { }).then(function () {
+        throw e;
+      });
+    }
+    throw e;
   });
 }
 
@@ -204,17 +218,16 @@ function st0() {
 }
 
 function resetTab(tabId) {
-  return getState().then(function (st) {
-    var t = st.tabs[tabId];
-    var chain = Promise.resolve();
-    if (t && t.mode === 'cdp') {
-      chain = chrome.debugger.sendCommand({ tabId: tabId }, 'Emulation.setTimezoneOverride', {
-        timezoneId: '',
-      }).catch(function () { }).then(function () {
-        return chrome.debugger.detach({ tabId: tabId }).catch(function () { });
-      });
-    }
-    return chain.then(function () {
+  // 无条件清除时区覆盖并分离调试器：apply 中途失败（附加成功后异常）可能
+  // 没留下 mode='cdp' 的状态记录，只按记录分离会漏掉这些"孤儿"调试器，
+  // 导致 Chrome 一直显示"正在调试此浏览器"横幅。未附加时错误直接吞掉。
+  var clearCdp = chrome.debugger.sendCommand({ tabId: tabId }, 'Emulation.setTimezoneOverride', {
+    timezoneId: '',
+  }).catch(function () { }).then(function () {
+    return chrome.debugger.detach({ tabId: tabId }).catch(function () { });
+  });
+  return clearCdp.then(function () {
+    return getState().then(function (st) {
       delete st.tabs[tabId];
       return chrome.storage.local.set({ tabs: st.tabs });
     });
