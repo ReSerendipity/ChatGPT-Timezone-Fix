@@ -54,6 +54,8 @@ _Coming soon — popup, verification panel and the floating on-page badge._
 
 **"Load unpacked" shows an error** — make sure you selected the *inner* folder that directly contains `manifest.json` (e.g. `chatgpt-timezone-fix-main/`), not the ZIP file and not the folder that contains it.
 
+**Can I just drag the folder into the browser?** — no, drag-and-drop does not install extensions in Chrome/Edge. Click the **Load unpacked** button and pick the folder in the dialog that opens. (Some extraction tools create a double folder like `chatgpt-timezone-fix-main\chatgpt-timezone-fix-main\` — always pick the inner one that contains `manifest.json`.)
+
 **Chrome shows a "… is debugging this browser" banner on the tab** — that's expected in the browser-level (CDP) method; it's how the real per-tab override stays active. Closing the banner detaches it — press Apply again to restore. Prefer no banner? Switch to the page-script method.
 
 **Can I change the Ctrl+Shift+Z shortcut?** — yes: open `chrome://extensions/shortcuts` (Edge: `edge://extensions/shortcuts`) and edit "Apply a random timezone to the current tab".
@@ -196,6 +198,8 @@ _待补充：popup、验证面板与页面悬浮徽标。_
 ## 常见问题
 
 **点「加载已解压」报错** —— 请确认选中的是**直接包含 `manifest.json` 的内层目录**（如 `chatgpt-timezone-fix-main/`），而不是 zip 文件本身，也不是它的上级目录。
+
+**可以把文件夹直接拖进浏览器吗？** —— 不行，Chrome/Edge 不支持拖拽安装扩展。必须点「加载已解压」按钮，在弹出的选择框里选中文件夹。（部分解压工具会多套一层同名文件夹，如 `chatgpt-timezone-fix-main\chatgpt-timezone-fix-main\`——选直接包含 `manifest.json` 的里层即可。）
 
 **标签页出现「正在调试此浏览器」横幅** —— 这是浏览器级（CDP）方式的正常现象，真正的时区覆盖靠它保持；关掉横幅会解除覆盖，重新点「应用」即可恢复。不想看到横幅，可切换到页面脚本方式。
 
