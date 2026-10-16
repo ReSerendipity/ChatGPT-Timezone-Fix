@@ -29,7 +29,7 @@ _Coming soon — popup, verification panel and the floating on-page badge._
 1. Clone or download this repository. Any folder name works when loading — `chatgpt-timezone-fix` is just the name that matches the repository.
 2. Open `chrome://extensions` (Edge: `edge://extensions`).
 3. Enable **Developer mode** (top right).
-4. Click **Load unpacked** and select the `chatgpt-timezone-fix` folder.
+4. Click **Load unpacked** (installs an extension straight from a local folder — no store needed) and select the `chatgpt-timezone-fix` folder.
 5. Pin the extension and click its toolbar icon.
 
 ## Usage
@@ -172,7 +172,7 @@ _待补充：popup、验证面板与页面悬浮徽标。_
 1. 克隆或下载本仓库。解压后的目录名可任意（加载不强制改名；与仓库名一致只是便于对照）。
 2. 打开 `chrome://extensions`（Edge 用 `edge://extensions`）。
 3. 打开右上角**开发者模式**。
-4. 点击**加载已解压的扩展程序**，选择 `chatgpt-timezone-fix` 目录。
+4. 点击**加载已解压的扩展程序**（Load unpacked——直接从本地文件夹安装扩展，无需经过商店），选择 `chatgpt-timezone-fix` 目录。
 5. 固定扩展到工具栏，点击图标即可使用。
 
 ## 使用方法
