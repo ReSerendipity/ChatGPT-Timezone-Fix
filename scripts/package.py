@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""把扩展打包为 dist/change-timezone-<version>.zip（跨平台，仅标准库）。
+"""把扩展打包为 dist/chatgpt-timezone-fix-<version>.zip（跨平台，仅标准库）。
 
 只打包运行时需要的文件：
   manifest.json、_locales/、background/、src/、popup/、options/、icons/、data/
@@ -49,7 +49,7 @@ def main():
         version = json.load(f)["version"]
     dist = os.path.join(root, "dist")
     os.makedirs(dist, exist_ok=True)
-    dest = os.path.join(dist, "change-timezone-%s.zip" % version)
+    dest = os.path.join(dist, "chatgpt-timezone-fix-%s.zip" % version)
 
     files = collect_files(root)
     with zipfile.ZipFile(dest, "w", zipfile.ZIP_DEFLATED) as zf:

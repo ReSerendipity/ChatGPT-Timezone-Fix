@@ -2,6 +2,8 @@
 
 [中文说明](#修改时区) | Free & open source (Apache-2.0) timezone switcher for Chrome / Edge (Manifest V3)
 
+**Why this exists:** services like ChatGPT detect the browser's time zone and block sign-ups or usage from regions they don't support — switching the tab's time zone is the common workaround. This extension makes that a one-click, per-tab operation, and verifies the override actually took effect.
+
 
 ## Features
 
@@ -23,10 +25,10 @@ _Coming soon — popup, verification panel and the floating on-page badge._
 
 ## Install (load unpacked)
 
-1. Clone or download this repository. Any folder name works when loading — `change-timezone` is just the name that matches the repository.
+1. Clone or download this repository. Any folder name works when loading — `chatgpt-timezone-fix` is just the name that matches the repository.
 2. Open `chrome://extensions` (Edge: `edge://extensions`).
 3. Enable **Developer mode** (top right).
-4. Click **Load unpacked** and select the `change-timezone` folder.
+4. Click **Load unpacked** and select the `chatgpt-timezone-fix` folder.
 5. Pin the extension and click its toolbar icon.
 
 ## Usage
@@ -49,7 +51,7 @@ _Coming soon — popup, verification panel and the floating on-page badge._
 
 ## FAQ
 
-**"Load unpacked" shows an error** — make sure you selected the *inner* folder that directly contains `manifest.json` (e.g. `change-timezone-main/`), not the ZIP file and not the folder that contains it.
+**"Load unpacked" shows an error** — make sure you selected the *inner* folder that directly contains `manifest.json` (e.g. `chatgpt-timezone-fix-main/`), not the ZIP file and not the folder that contains it.
 
 **Chrome shows a "… is debugging this browser" banner on the tab** — that's expected in the browser-level (CDP) method; it's how the real per-tab override stays active. Closing the banner detaches it — press Apply again to restore. Prefer no banner? Switch to the page-script method.
 
@@ -81,7 +83,7 @@ python tools/gen_locales.py
 # t('key') / data-i18n="key" reference scan) — pure Node, no dependencies
 node scripts/check-i18n.mjs
 
-# build dist/change-timezone-<version>.zip (runtime files only)
+# build dist/chatgpt-timezone-fix-<version>.zip (runtime files only)
 python scripts/package.py
 ```
 
@@ -97,7 +99,7 @@ Requires: Python 3 + Pillow (icons only); Node.js (check script only). No other 
 ## Repository layout
 
 ```
-change-timezone/
+chatgpt-timezone-fix/
 ├── .gitignore
 ├── LICENSE                       # Apache-2.0
 ├── README.md
@@ -142,6 +144,8 @@ change-timezone/
 
 [English](#change-timezone) | 免费开源（Apache-2.0）的 Chrome / Edge 时区切换扩展（Manifest V3）
 
+**为什么做这个扩展**：ChatGPT 等服务会检测浏览器时区，对不在支持范围内的区域拒绝注册或使用——切换标签页时区是常见的绕过方式。本扩展把这件事做成一键、按标签页完成，并自带「是否真的生效」的验证。
+
 
 ## 功能特性
 
@@ -166,7 +170,7 @@ _待补充：popup、验证面板与页面悬浮徽标。_
 1. 克隆或下载本仓库。解压后的目录名可任意（加载不强制改名；与仓库名一致只是便于对照）。
 2. 打开 `chrome://extensions`（Edge 用 `edge://extensions`）。
 3. 打开右上角**开发者模式**。
-4. 点击**加载已解压的扩展程序**，选择 `change-timezone` 目录。
+4. 点击**加载已解压的扩展程序**，选择 `chatgpt-timezone-fix` 目录。
 5. 固定扩展到工具栏，点击图标即可使用。
 
 ## 使用方法
@@ -189,7 +193,7 @@ _待补充：popup、验证面板与页面悬浮徽标。_
 
 ## 常见问题
 
-**点「加载已解压」报错** —— 请确认选中的是**直接包含 `manifest.json` 的内层目录**（如 `change-timezone-main/`），而不是 zip 文件本身，也不是它的上级目录。
+**点「加载已解压」报错** —— 请确认选中的是**直接包含 `manifest.json` 的内层目录**（如 `chatgpt-timezone-fix-main/`），而不是 zip 文件本身，也不是它的上级目录。
 
 **标签页出现「正在调试此浏览器」横幅** —— 这是浏览器级（CDP）方式的正常现象，真正的时区覆盖靠它保持；关掉横幅会解除覆盖，重新点「应用」即可恢复。不想看到横幅，可切换到页面脚本方式。
 
@@ -221,7 +225,7 @@ python tools/gen_locales.py
 # t('key') / data-i18n="key" 引用扫描）——纯 Node，零依赖
 node scripts/check-i18n.mjs
 
-# 打包 dist/change-timezone-<version>.zip（仅运行时文件）
+# 打包 dist/chatgpt-timezone-fix-<version>.zip（仅运行时文件）
 python scripts/package.py
 ```
 
