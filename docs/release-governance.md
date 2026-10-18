@@ -2,7 +2,7 @@
 
 > **来源与权威**：公共条款见 `ReSerendipity/.github` 的 `REPOSITORY_GUIDELINES.md` §10（发布 / 分发统一规范）。
 > 本文件是 `ChatGPT-Timezone-Fix` 仓的本地化发布文档，只记录**本仓特有**内容，**不重写、不抵触 §10 的公共条款**。
-> **本仓现状（2026-10-18 核实）**：`main` 上**无 `.github/workflows/`、无 `CHANGELOG.md`、无 tag / Release**——即**本仓当前无发布链**。下文凡涉及远端流程处均已如实标注现状，未虚构任何 workflow 或产物。
+> **本仓现状（2026-10-18 核实）**：`main` 上**无 `.github/workflows/`、无 tag / Release**；**`CHANGELOG.md` 已于 2026-10-18 补建**——即**本仓当前无发布链**。下文凡涉及远端流程处均已如实标注现状，未虚构任何 workflow 或产物。
 
 ---
 
@@ -26,7 +26,7 @@
 - 遵循 **Keep a Changelog**：`Added / Changed / Fixed / Deprecated / Removed / Security`。
 - 每次合并 `main` 在 `[Unreleased]` 追加；type 映射 `feat→Added`、`fix→Fixed`、`refactor→Changed`。
 - 发版时 `[Unreleased]` → `[VERSION] - YYYY-MM-DD`。
-- **本仓现状**：仓库根**无 `CHANGELOG.md`**（已核实文件树）。上列口径为对齐 §10.2 的目标状态；建立 CHANGELOG 属后续单独动作，**不在本次改动范围**。
+- **本仓现状**：仓库根**已建立 `CHANGELOG.md`**（2026-10-18 补建，遵循 Keep a Changelog）。上列口径为对齐 §10.2 的目标状态；此后每次合并 `main` 在 `[Unreleased]` 追加、发版时落版本段。
 
 ## 3. 发布流程（远端）
 
@@ -34,7 +34,7 @@
 
 **目标流程（对齐 §10.2，待远端发布链就位后生效）**
 
-1. 确认 `[Unreleased]` 条目完整（依赖 §2 的 CHANGELOG 建立，当前缺失）
+1. 确认 `[Unreleased]` 条目完整（依赖 §2 的 CHANGELOG，已建立）
 2. 同步版本位（本仓即 `manifest.json` 的 `version`，见 §1）
 3. 本地打 tag 并推送：`git tag v<X.Y.Z>` → `git push origin v<X.Y.Z>`
 4. 远端凭 `push: tags: v*` 触发发布链构建产物（**本仓待建**；当前无 `release.yml` 等任何 workflow）
@@ -70,7 +70,7 @@
 ## 7. 发布前检查清单
 
 - [ ] 版本位同步：`manifest.json` 的 `version` 为本次目标版本（见 §1；本仓无其它版本位）
-- [ ] CHANGELOG `[Unreleased]` 已改版本 + 日期（**依赖 §2 的 CHANGELOG 建立，当前缺失**）
+- [ ] CHANGELOG `[Unreleased]` 已改版本 + 日期（**依赖 §2 的 CHANGELOG，已建立**）
 - [ ] i18n 一致性校验通过：`node scripts/check-i18n.mjs`（退出码 0；本仓无单元测试框架）
 - [ ] lint / format：**不适用**（本仓无 lint / format 配置）
 - [ ] 镜像类仓项（Trivy 阻断、`.trivyignore.yaml`、`provenance` + `sbom`）：**不适用**
